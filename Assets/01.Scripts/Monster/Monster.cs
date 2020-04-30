@@ -12,19 +12,30 @@ public class Monster : MonoBehaviour
     private Action<Monster> monsterGenerateAction;
     private Action<Monster> monsterResetAction;
 
+    private Action<int> monsterDeathAction;
+    private Action<float> monsterAttackAction;
 
-    private int defaultHp = 3;
+    [SerializeField]
+    private int defaultHp;
     private int monsterHp;
     private int[] monsterHpKeys;
+
+    [SerializeField]
+    private float damage;
+
+    [SerializeField]
+    private int score;
 
     private void Awake(){
         monsterHp = defaultHp;
         monsterHpKeys = new int[monsterHp];
     }
 
-    public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction){
+    public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction){
         this.monsterGenerateAction = monsterGenerateAction;
         this.monsterResetAction = monsterResetAction;
+        this.monsterAttackAction = monsterAttackAction;
+        this.monsterDeathAction = monsterDeathAction;
     }
 
     public void GetDamage(int key){
@@ -60,12 +71,18 @@ public class Monster : MonoBehaviour
             yield return YieldInstructionCache.WaitFrame;
 
             if(gameObject.transform.position.x * moveDirection.x > -1){
-                ResetObject();
+                Attack();
             }
         }       
     }
 
-    private void Death(){
+    public void Attack(){
+        monsterAttackAction(damage);
+        ResetObject();
+    }
+
+    public void Death(){
+        monsterDeathAction(score);
         ResetObject();
     }
 

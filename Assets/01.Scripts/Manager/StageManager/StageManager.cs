@@ -7,6 +7,8 @@ public class StageManager : MonoBehaviour
     private MonsterCreator monsterCreator;
     private MonsterDamageController monsterDamageController;
     private PlayerGestureController playerGestureController;
+    private ScoreManager scoreManager;
+
 
     [SerializeField]
     private float monsterGenenrateInterval;
@@ -15,13 +17,19 @@ public class StageManager : MonoBehaviour
         monsterCreator = gameObject.GetComponent<MonsterCreator>();
         monsterDamageController = gameObject.GetComponent<MonsterDamageController>();
         playerGestureController = gameObject.GetComponent<PlayerGestureController>();
+        scoreManager = gameObject.GetComponent<ScoreManager>();
     }
 
     private void Start(){
         playerGestureController.SettingGestureAction(monsterDamageController.AttackMonsters);
 
         monsterCreator.MonsterList.ForEach((monster) => {
-            monster.SettingActions(monsterDamageController.AddActiveMonster, monsterDamageController.RemoveActiveMonster);        
+            monster.SettingActions(
+                monsterDamageController.AddActiveMonster, 
+                monsterDamageController.RemoveActiveMonster, 
+                scoreManager.GetDamage, 
+                scoreManager.ScoreUp
+            );        
         });
 
         StartCoroutine(MonsterGenerateCoroutine());
