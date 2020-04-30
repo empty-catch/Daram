@@ -13,20 +13,39 @@ public class Monster : MonoBehaviour
     private Action<Monster> monsterResetAction;
 
 
-    private int[] monsterHp = new int[3];
+    private int defaultHp = 3;
+    private int monsterHp;
+    private int[] monsterHpKeys;
+
+    private void Awake(){
+        monsterHp = defaultHp;
+        monsterHpKeys = new int[monsterHp];
+    }
 
     public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction){
         this.monsterGenerateAction = monsterGenerateAction;
         this.monsterResetAction = monsterResetAction;
     }
 
+    public void GetDamage(int key){
+        for(int i = 0; i < monsterHpKeys.Length; i++){
+            if(monsterHpKeys[i].Equals(key)){
+                monsterHp--;
+
+                if(monsterHp <= 0){
+                    Death();
+                }
+            }
+        }
+    }  
+
     public void Execute(){
         gameObject.SetActive(true);
         
         monsterGenerateAction(this);
 
-        for(int i = 0; i < monsterHp.Length; i++){
-            monsterHp[i] = UnityEngine.Random.Range(0,9);
+        for(int i = 0; i < monsterHpKeys.Length; i++){
+            monsterHpKeys[i] = UnityEngine.Random.Range(0,9);
         }
 
         moveDirection = (Vector2.zero - (Vector2)gameObject.transform.position).normalized;
@@ -44,8 +63,13 @@ public class Monster : MonoBehaviour
         }       
     }
 
+    private void Death(){
+        ResetObject();
+    }
+
     public void ResetObject(){
         gameObject.SetActive(false);
         monsterResetAction(this);
+        monsterHp = defaultHp;
     }
 }
