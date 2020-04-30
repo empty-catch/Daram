@@ -35,6 +35,8 @@ public class Monster : MonoBehaviour
                 if(monsterHp <= 0){
                     Death();
                 }
+
+                break;
             }
         }
     }  

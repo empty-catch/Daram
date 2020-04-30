@@ -14,4 +14,10 @@ public class MonsterDamageController : MonoBehaviour
    public void RemoveActiveMonster(Monster monster){
        activeMonsterList.Remove(monster);
    }
+
+   public void AttackMonsters(int key){
+       for(int i = 0; i < activeMonsterList.Count; i++){
+           activeMonsterList[i].GetDamage(key);
+       }
+   }
 }

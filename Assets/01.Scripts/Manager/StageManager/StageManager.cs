@@ -6,6 +6,7 @@ public class StageManager : MonoBehaviour
 {
     private MonsterCreator monsterCreator;
     private MonsterDamageController monsterDamageController;
+    private PlayerGestureController playerGestureController;
 
     [SerializeField]
     private float monsterGenenrateInterval;
@@ -13,10 +14,12 @@ public class StageManager : MonoBehaviour
     private void Awake(){
         monsterCreator = gameObject.GetComponent<MonsterCreator>();
         monsterDamageController = gameObject.GetComponent<MonsterDamageController>();
+        playerGestureController = gameObject.GetComponent<PlayerGestureController>();
     }
 
     private void Start(){
-        
+        playerGestureController.SettingGestureAction(monsterDamageController.AttackMonsters);
+
         monsterCreator.MonsterList.ForEach((monster) => {
             monster.SettingActions(monsterDamageController.AddActiveMonster, monsterDamageController.RemoveActiveMonster);        
         });
