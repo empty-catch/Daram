@@ -5,15 +5,18 @@ using UnityEngine;
 public class StageManager : MonoBehaviour
 {
     private MonsterCreator monsterCreator;
+    private MonsterDamageController monsterDamageController;
 
     [SerializeField]
     private float monsterGenenrateInterval;
 
     private void Awake(){
         monsterCreator = gameObject.GetComponent<MonsterCreator>();
+        monsterDamageController = gameObject.GetComponent<MonsterDamageController>();
     }
 
     private void Start(){
+
         StartCoroutine(MonsterGenerateCoroutine());
     }
 
@@ -23,5 +26,4 @@ public class StageManager : MonoBehaviour
             yield return YieldInstructionCache.WaitingSecond(monsterGenenrateInterval);
         }
     }
-
 }
