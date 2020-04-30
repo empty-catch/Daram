@@ -16,6 +16,10 @@ public class StageManager : MonoBehaviour
     }
 
     private void Start(){
+        
+        monsterCreator.MonsterList.ForEach((monster) => {
+            monster.SettingActions(monsterDamageController.AddActiveMonster, monsterDamageController.RemoveActiveMonster);        
+        });
 
         StartCoroutine(MonsterGenerateCoroutine());
     }

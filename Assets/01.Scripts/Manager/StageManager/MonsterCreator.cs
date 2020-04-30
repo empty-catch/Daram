@@ -14,6 +14,8 @@ public class MonsterCreator : MonoBehaviour
     private Vector2 leftGeneratePosition;
     private Vector2 rightGeneratePosition;
 
+    public List<Monster> MonsterList => monsterList;
+
     private void Awake(){
         leftGeneratePosition = Vector2.zero;
         rightGeneratePosition = Vector2.zero;
