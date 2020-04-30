@@ -22,6 +22,8 @@ public class StageManager : MonoBehaviour
 
     private void Start(){
         playerGestureController.SettingGestureAction(monsterDamageController.AttackMonsters);
+        
+        scoreManager.SettingAbilitySkil(monsterDamageController.MonsterAllDeath);
 
         monsterCreator.MonsterList.ForEach((monster) => {
             monster.SettingActions(

@@ -20,4 +20,10 @@ public class MonsterDamageController : MonoBehaviour
            activeMonsterList[i].GetDamage(key);
        }
    }
+
+   public void MonsterAllDeath(){
+        for(int i = 0; i < activeMonsterList.Count; i++){
+           activeMonsterList[i].Death();
+       }
+   }
 }
