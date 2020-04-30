@@ -9,7 +9,7 @@ public static class YieldInstructionCache
 
     public static object WaitFrame => waitFrame;
 
-    public WaitForSeconds WaitingSecond(float waitingTime){
+    public static WaitForSeconds WaitingSecond(float waitingTime){
         if(!waitingSecond.ContainsKey(waitingTime)){
             waitingSecond.Add(waitingTime, new WaitForSeconds(waitingTime));
         }
