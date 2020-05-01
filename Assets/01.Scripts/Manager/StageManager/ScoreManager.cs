@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class ScoreManager : MonoBehaviour
 {
     [SerializeField]
@@ -95,9 +97,10 @@ public class ScoreManager : MonoBehaviour
     {
         hp -= damage;
 
-        if (hp < 0)
+        if (hp <= 0)
         {
             hp = 0;
+            SceneManager.LoadScene(0);
         }
 
         for (int i = 0; i < hpImages.Length; i++)
