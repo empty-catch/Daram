@@ -34,6 +34,12 @@ public class ScoreManager : MonoBehaviour
 
     private Action abilitySkil;
 
+    [SerializeField]
+    private Sprite defaultHpSprite;
+
+    [SerializeField]
+    private Sprite damagedHpSprite;
+
     private void Awake()
     {
         hp = defaultHp;
@@ -96,12 +102,12 @@ public class ScoreManager : MonoBehaviour
 
         for (int i = 0; i < hpImages.Length; i++)
         {
-            hpImages[i].gameObject.SetActive(false);
+            hpImages[i].sprite = damagedHpSprite;
         }
 
         for (int i = 0; i < hp / (defaultHp / hpImages.Length); i++)
         {
-            hpImages[i].gameObject.SetActive(true);
+            hpImages[i].sprite = defaultHpSprite;
         }
 
     }

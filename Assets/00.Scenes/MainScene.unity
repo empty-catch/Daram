@@ -19825,6 +19825,10 @@ MonoBehaviour:
   - {fileID: 7047720652001868277, guid: 4999f0a497b6b4742b5b5d59783ab3d3, type: 3}
   - {fileID: 3319888305708375510, guid: 4999f0a497b6b4742b5b5d59783ab3d3, type: 3}
   defaultHp: 5
+  defaultHpSprite: {fileID: 4974403084737825917, guid: 5af5f32cf044245699fb6cc92f0e4416,
+    type: 3}
+  damagedHpSprite: {fileID: -3859521769266734839, guid: 5af5f32cf044245699fb6cc92f0e4416,
+    type: 3}
 --- !u!1 &1922016162
 GameObject:
   m_ObjectHideFlags: 0
