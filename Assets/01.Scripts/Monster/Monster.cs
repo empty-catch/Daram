@@ -29,21 +29,25 @@ public class Monster : MonoBehaviour
     [SerializeField]
     private int score;
 
-    [SerializeField]
-    private GameObject[] keyObjects;
-    
     private Image[][] keyImages;
 
 
     private void Awake(){
-        keyImages = new Image[keyObjects.Length][];
+        keyImages = new Image[8][];
 
         monsterHp = defaultHp;
         monsterHpKeys = new int[monsterHp];
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
-        for(int i = 0; i < keyObjects.Length; i++){
-            keyImages[i] = keyObjects[i].GetComponentsInChildren<Image>(true); 
+        for(int i = 0; i < 8; i++){
+            Image[] tempArray = new Image[3];
+
+            for(int j =  i * 3; j < i * 3 + 3; j++){
+                Debug.Log(j - i * 3);
+                tempArray[j - i * 3] = gameObject.transform.GetChild(j).GetComponent<Image>();
+            }
+            
+            keyImages[i] = tempArray[i].GetComponentsInChildren<Image>(true); 
         }
     }
 
