@@ -57,12 +57,17 @@ public class GestureDrawer : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             var candidate = new Gesture(points.ToArray());
-            var result = PointCloudRecognizer.Classify(candidate, gestures.ToArray());
-
-            if (result.Score >= 0.8F)
+            try
             {
-                gestureDrawed?.Invoke(GetGestureIndex(result.GestureClass));
+                var result = PointCloudRecognizer.Classify(candidate, gestures.ToArray());
+                Debug.Log($"{result.GestureClass}, {result.Score}");
+
+                if (result.Score >= 0.75F)
+                {
+                    gestureDrawed?.Invoke(GetGestureIndex(result.GestureClass));
+                }
             }
+            catch (IndexOutOfRangeException) { }
 
             strokeID = -1;
             points.Clear();

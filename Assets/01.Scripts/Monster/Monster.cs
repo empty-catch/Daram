@@ -47,8 +47,8 @@ public class Monster : MonoBehaviour
             for(int j =  i * 3; j < i * 3 + 3; j++){
                 tempArray[j - i * 3] = childObject.transform.GetChild(j).GetComponent<Image>();
             }
-            
-            keyImages[i] = tempArray; 
+
+            keyImages[i] = tempArray;
         }
     }
 
@@ -63,21 +63,24 @@ public class Monster : MonoBehaviour
         for(int i = 0; i < monsterHpKeys.Length; i++){
             if(monsterHpKeys[i].Equals(key)){
                 monsterHp--;
-                for(int j = 0; j < keyImages[monsterHpKeys[i]].Length; j++){
-                    keyImages[monsterHpKeys[i]][j].gameObject.SetActive(false);
-                }
                 if(monsterHp <= 0){
                     Death();
+                }
+                for (int j = 0; j < keyImages[monsterHpKeys[i]].Length; j++){
+                    if (keyImages[monsterHpKeys[i]][j].gameObject.activeInHierarchy){
+                        keyImages[monsterHpKeys[i]][j].gameObject.SetActive(false);
+                        break;
+                    }
                 }
 
                 break;
             }
         }
-    }  
+    }
 
     public void Execute(){
         gameObject.SetActive(true);
-        
+
         monsterGenerateAction(this);
 
         for(int i = 0; i < monsterHpKeys.Length; i++){
@@ -112,7 +115,7 @@ public class Monster : MonoBehaviour
             if(gameObject.transform.position.x * moveDirection.x > -2){
                 Attack();
             }
-        }       
+        }
     }
 
     public void Attack(){
