@@ -127,7 +127,7 @@ public class Monster : MonoBehaviour
         gameObject.SetActive(false);
 
         for(int i = 0; i < keyImages.Length; i++){
-            for(int j = 0; j < keyImages.Length; j++){
+            for(int j = 0; j < keyImages[i].Length; j++){
                 keyImages[i][j].gameObject.SetActive(false);
             }
         }
