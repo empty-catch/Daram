@@ -22,8 +22,9 @@ public class MonsterDamageController : MonoBehaviour
    }
 
    public void MonsterAllDeath(){
-        for(int i = 0; i < activeMonsterList.Count; i++){
-           activeMonsterList[i].Death();
-       }
+        int reapetCount = activeMonsterList.Count;
+        for(int i = 0; i < reapetCount; i++){
+           activeMonsterList[0].Death();
+        }
    }
 }
