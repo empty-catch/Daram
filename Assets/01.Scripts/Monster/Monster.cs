@@ -39,15 +39,16 @@ public class Monster : MonoBehaviour
         monsterHpKeys = new int[monsterHp];
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
+        GameObject childObject = gameObject.transform.GetChild(0).gameObject;
+
         for(int i = 0; i < 8; i++){
             Image[] tempArray = new Image[3];
 
             for(int j =  i * 3; j < i * 3 + 3; j++){
-                Debug.Log(j - i * 3);
-                tempArray[j - i * 3] = gameObject.transform.GetChild(j).GetComponent<Image>();
+                tempArray[j - i * 3] = childObject.transform.GetChild(j).GetComponent<Image>();
             }
             
-            keyImages[i] = tempArray[i].GetComponentsInChildren<Image>(true); 
+            keyImages[i] = tempArray; 
         }
     }
 
