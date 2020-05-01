@@ -1,17 +1,24 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Gesture : MonoBehaviour
 {
-    public event Action<int[]> GestureDrawed;
+    [Serializable]
+    public class IntEvent : UnityEvent<int[]> { }
+
+    [SerializeField]
+    private IntEvent gestureDrawed;
 
     private bool isDragging;
-    private Queue<int> numbers;
+    private Queue<int> numbers = new Queue<int>();
 
-    public void TouchBegan()
+    public void TouchBegan(int index)
     {
         isDragging = true;
+        TouchEntered(index);
     }
 
     public void TouchEnded()
@@ -19,8 +26,18 @@ public class Gesture : MonoBehaviour
         if (isDragging)
         {
             isDragging = false;
-            GestureDrawed?.Invoke(numbers.ToArray());
+            var array = numbers.Distinct().ToArray();
+            gestureDrawed?.Invoke(array);
             numbers.Clear();
+
+#if UNITY_EDITOR
+            var builder = new System.Text.StringBuilder();
+            foreach (var i in array)
+            {
+                builder.Append(i);
+            }
+            Debug.Log(builder.ToString());
+#endif
         }
     }
 
