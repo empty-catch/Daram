@@ -18,10 +18,10 @@ public class ScoreManager : MonoBehaviour
     private Button abilityButton;
 
     [SerializeField]
-    private Image idleAbilityButtonImage;
+    private Sprite idleAbilityButtonImage;
 
     [SerializeField]
-    private Image[] abilityButtonImages;
+    private Sprite[] abilityButtonImages;
 
     private int score;
 
@@ -69,7 +69,7 @@ public class ScoreManager : MonoBehaviour
     {
         abilitySkil();
         AbilityGageInitialization();
-        abilityButton.image = idleAbilityButtonImage;
+        abilityButton.image.sprite = idleAbilityButtonImage;
     }
 
     private void AbilityGageInitialization()
@@ -82,7 +82,7 @@ public class ScoreManager : MonoBehaviour
     private void ChangeButtonImage()
     {
         int index = UnityEngine.Random.Range(0, abilityButtonImages.Length);
-        abilityButton.image = abilityButtonImages[index];
+        abilityButton.image.sprite = abilityButtonImages[index];
     }
 
     public void GetDamage(float damage)

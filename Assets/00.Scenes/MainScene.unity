@@ -21107,8 +21107,13 @@ MonoBehaviour:
   - {fileID: 609825589}
   abilityGageImage: {fileID: 1904050896}
   abilityButton: {fileID: 1024825119}
-  idleAbilityButtonImage: {fileID: 0}
-  abilityButtonImages: []
+  idleAbilityButtonImage: {fileID: 21300000, guid: 298c6f97665e042979b14541194d2df1,
+    type: 3}
+  abilityButtonImages:
+  - {fileID: -291745080600883064, guid: 4999f0a497b6b4742b5b5d59783ab3d3, type: 3}
+  - {fileID: 7679350495961603834, guid: 4999f0a497b6b4742b5b5d59783ab3d3, type: 3}
+  - {fileID: 7047720652001868277, guid: 4999f0a497b6b4742b5b5d59783ab3d3, type: 3}
+  - {fileID: 3319888305708375510, guid: 4999f0a497b6b4742b5b5d59783ab3d3, type: 3}
   defaultHp: 5
 --- !u!1 &1910834519
 GameObject:
