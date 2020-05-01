@@ -63,7 +63,9 @@ public class Monster : MonoBehaviour
         for(int i = 0; i < monsterHpKeys.Length; i++){
             if(monsterHpKeys[i].Equals(key)){
                 monsterHp--;
-                keyImages[monsterHpKeys[i]][0].gameObject.SetActive(false);
+                for(int j = 0; j < keyImages[monsterHpKeys[i]].Length; j++){
+                    keyImages[monsterHpKeys[i]][j].gameObject.SetActive(false);
+                }
                 if(monsterHp <= 0){
                     Death();
                 }
