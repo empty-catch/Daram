@@ -5,7 +5,11 @@ using System;
 public class PlayerGestureController : MonoBehaviour
 {
     private Action<int> gestureAction;
-    private int[] inputKeys = {0,1,2,3,4,5,6,7,8};
+    private int[] inputKeys = {0,1,2,3,4,5,6,7};
+
+    public void ActGesture(int key){
+        gestureAction?.Invoke(key);
+    }
 
     public void SettingGestureAction(Action<int> gestureAction){
         this.gestureAction = gestureAction;
