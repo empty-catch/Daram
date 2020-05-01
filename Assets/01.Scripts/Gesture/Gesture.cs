@@ -2,15 +2,11 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Gesture : MonoBehaviour
 {
-    [Serializable]
-    public class IntEvent : UnityEvent<int[]> { }
-
     [SerializeField]
-    private IntEvent gestureDrawed;
+    private IntsEvent gestureDrawed;
 
     private bool isDragging;
     private Queue<int> numbers = new Queue<int>();
