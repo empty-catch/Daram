@@ -15,6 +15,8 @@ public class Monster : MonoBehaviour
     private Action<int> monsterDeathAction;
     private Action<float> monsterAttackAction;
 
+    private SpriteRenderer spriteRenderer;
+
     [SerializeField]
     private int defaultHp;
     private int monsterHp;
@@ -29,6 +31,7 @@ public class Monster : MonoBehaviour
     private void Awake(){
         monsterHp = defaultHp;
         monsterHpKeys = new int[monsterHp];
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction){
@@ -62,6 +65,8 @@ public class Monster : MonoBehaviour
         }
 
         moveDirection = (Vector2.zero - (Vector2)gameObject.transform.position).normalized;
+        spriteRenderer.flipX = moveDirection.x > 0 ? true : false;
+        
         StartCoroutine(ExecuteCoroutine());
     }
 
