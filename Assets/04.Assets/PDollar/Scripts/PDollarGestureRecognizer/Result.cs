@@ -4,7 +4,6 @@
     {
 
         public string GestureClass;
-        public string GestureClass2nd;
         public float Score;
     }
 }

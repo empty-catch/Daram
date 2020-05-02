@@ -32,7 +32,6 @@ public class Demo : MonoBehaviour
 
     void Start()
     {
-
         platform = Application.platform;
         drawArea = new Rect(0, 0, Screen.width - Screen.width / 3, Screen.height);
 

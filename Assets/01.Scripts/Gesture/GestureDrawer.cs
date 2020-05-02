@@ -5,10 +5,6 @@ using PDollarGestureRecognizer;
 
 public class GestureDrawer : MonoBehaviour
 {
-    // TODO: 빌드 뽑기 전 제외해야 함
-    [SerializeField]
-    private UnityEngine.UI.Text log;
-
     [SerializeField]
     private new LineRenderer renderer;
     [SerializeField]
@@ -65,18 +61,11 @@ public class GestureDrawer : MonoBehaviour
             try
             {
                 var result = PointCloudRecognizer.Classify(candidate, gestures.ToArray());
+                gestureDrawed?.Invoke(GetGestureIndex(result.GestureClass));
 
-                // TODO: 빌드 뽑기 전 제외해야 함
-                var log = $"1st({result.GestureClass}:{result.Score}), 2nd({result.GestureClass2nd}:{result.Score})";
 #if UNITY_EDITOR
-                Debug.Log(log);
+                Debug.Log($"{result.GestureClass} {result.Score}");
 #endif
-                this.log.text += $"\n{log}";
-
-                if (result.Score >= 0.75F)
-                {
-                    gestureDrawed?.Invoke(GetGestureIndex(result.GestureClass));
-                }
             }
             catch (IndexOutOfRangeException) { }
 
