@@ -14,7 +14,7 @@ public class ScoreManager : MonoBehaviour
     private Image[] hpImages;
 
     [SerializeField]
-    private Image abilityGageImage;
+    private Image abilityGaugeImage;
 
     [SerializeField]
     private Button abilityButton;
@@ -27,8 +27,8 @@ public class ScoreManager : MonoBehaviour
 
     private int score;
 
-    private float maxAbilityGage = 100;
-    private float abilityGage;
+    private float maxAbilityGauge = 100;
+    private float abilityGauge;
 
     [SerializeField]
     private float defaultHp;
@@ -61,29 +61,29 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = this.score.ToString();
 
 
-        abilityGage += score;
+        abilityGauge += score;
 
-        if (abilityGage >= maxAbilityGage)
+        if (abilityGauge >= maxAbilityGauge)
         {
-            abilityGage = maxAbilityGage;
+            abilityGauge = maxAbilityGauge;
             abilityButton.interactable = true;
             ChangeButtonImage();
         }
 
-        abilityGageImage.fillAmount = (abilityGage / maxAbilityGage);
+        abilityGaugeImage.fillAmount = (abilityGauge / maxAbilityGauge);
     }
 
     public void AbilitySkil()
     {
         abilitySkil();
-        AbilityGageInitialization();
+        AbilityGaugeInitialization();
         abilityButton.image.sprite = idleAbilityButtonImage;
     }
 
-    private void AbilityGageInitialization()
+    private void AbilityGaugeInitialization()
     {
-        abilityGage = 0;
-        abilityGageImage.fillAmount = 0;
+        abilityGauge = 0;
+        abilityGaugeImage.fillAmount = 0;
         abilityButton.interactable = false;
     }
 
