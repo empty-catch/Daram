@@ -15797,11 +15797,6 @@ PrefabInstance:
       propertyPath: gestureDrawed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1587948727}
-    - target: {fileID: 4763031882122199703, guid: ed4f33595c5018443b6e6742a3129b3e,
-        type: 3}
-      propertyPath: log
-      value: 
-      objectReference: {fileID: 514197394}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4f33595c5018443b6e6742a3129b3e, type: 3}
 --- !u!1 &1470264699
