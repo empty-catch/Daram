@@ -61,27 +61,25 @@ public class Monster : MonoBehaviour
 
     public void GetDamage(int key){
         
-        Debug.Log("Key: " + key);
-        Debug.Log("HP: " + monsterHpKeys[0]);
         if(monsterHpKeys[0].Equals(key)){
             monsterHp--;
 
 
             if(monsterHp <= 0){
                 Death();
+                return;
             }
+    
             for (int j = 0; j < keyImages[monsterHpKeys[0]].Length; j++){
                 if (keyImages[monsterHpKeys[0]][j].enabled.Equals(true)){
                     keyImages[monsterHpKeys[0]][j].enabled = false;
                     break;
                 }
             }
-
             int temp = monsterHpKeys[0];
             monsterHpKeys[0] = monsterHpKeys[1];  
             monsterHpKeys[1] = monsterHpKeys[2];  
             monsterHpKeys[2] = temp;  
-            
 
         }
     }
@@ -106,7 +104,6 @@ public class Monster : MonoBehaviour
         };
 
         for(int i = 0; i < monsterHpKeys.Length; i++){
-            Debug.Log(keyImages[monsterHpKeys[i]][getAvailableKeyImage(monsterHpKeys[i])].gameObject);
             keyImages[monsterHpKeys[i]][getAvailableKeyImage(monsterHpKeys[i])].gameObject.transform.SetAsLastSibling();
             keyImages[monsterHpKeys[i]][getAvailableKeyImage(monsterHpKeys[i])].gameObject.SetActive(true);
         }
@@ -144,6 +141,7 @@ public class Monster : MonoBehaviour
             for(int j = 0; j < keyImages[i].Length; j++){
                 keyImages[i][j].enabled = true;
                 keyImages[i][j].gameObject.SetActive(false);
+                Debug.Log(keyImages[i][j].enabled);
             }
         }
 
