@@ -19815,7 +19815,7 @@ MonoBehaviour:
   - {fileID: 1803451200}
   - {fileID: 981084080}
   - {fileID: 609825589}
-  abilityGaugeImage: {fileID: 0}
+  abilityGaugeImage: {fileID: 1904050896}
   abilityButton: {fileID: 1024825119}
   idleAbilityButtonImage: {fileID: 21300000, guid: 298c6f97665e042979b14541194d2df1,
     type: 3}
