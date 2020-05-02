@@ -20,8 +20,8 @@ public class MonsterCreator : MonoBehaviour
         leftGeneratePosition = Vector2.zero;
         rightGeneratePosition = Vector2.zero;
 
-        leftGeneratePosition.x = -10;
-        rightGeneratePosition.x = 10;
+        leftGeneratePosition.x = -7.5f;
+        rightGeneratePosition.x = 7.5f;
 
         monsterList = monstersParentObject.GetComponentsInChildren<Monster>(true).ToList();
     }
