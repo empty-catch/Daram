@@ -71,7 +71,7 @@ public class Monster : MonoBehaviour
                 Death();
             }
             for (int j = 0; j < keyImages[monsterHpKeys[0]].Length; j++){
-                if (keyImages[monsterHpKeys[0]][j].gameObject.activeInHierarchy){
+                if (keyImages[monsterHpKeys[0]][j].enabled.Equals(true)){
                     keyImages[monsterHpKeys[0]][j].enabled = false;
                     break;
                 }
@@ -139,7 +139,6 @@ public class Monster : MonoBehaviour
     }
 
     public void ResetObject(){
-        gameObject.SetActive(false);
 
         for(int i = 0; i < keyImages.Length; i++){
             for(int j = 0; j < keyImages[i].Length; j++){
@@ -148,6 +147,7 @@ public class Monster : MonoBehaviour
             }
         }
 
+        gameObject.SetActive(false);
         monsterResetAction(this);
         monsterHp = defaultHp;
     }

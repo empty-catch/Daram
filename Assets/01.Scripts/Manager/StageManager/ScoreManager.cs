@@ -64,7 +64,7 @@ public class ScoreManager : MonoBehaviour
         this.score += score;
         scoreText.text = this.score.ToString();
 
-        abilityGauge += 1000;
+        abilityGauge += 10;
 
         if (abilityGauge >= maxAbilityGauge)
         {
