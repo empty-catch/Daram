@@ -32,11 +32,11 @@ public class MonsterCreator : MonoBehaviour
 
         generatedMonster = GetAvailableMonster();
         
-        generatedMonster.gameObject.transform.position = Random.Range(0,2).Equals(0)
-        ? leftGeneratePosition
-        : rightGeneratePosition;
+        // generatedMonster.gameObject.transform.position = Random.Range(0,2).Equals(0)
+        // ? leftGeneratePosition
+        // : rightGeneratePosition;
 
-        generatedMonster.Execute();
+        generatedMonster?.Execute();
     }
 
     private Monster GetAvailableMonster(){

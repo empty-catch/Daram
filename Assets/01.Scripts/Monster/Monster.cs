@@ -60,21 +60,29 @@ public class Monster : MonoBehaviour
     }
 
     public void GetDamage(int key){
-        for(int i = 0; i < monsterHpKeys.Length; i++){
-            if(monsterHpKeys[i].Equals(key)){
-                monsterHp--;
-                if(monsterHp <= 0){
-                    Death();
-                }
-                for (int j = 0; j < keyImages[monsterHpKeys[i]].Length; j++){
-                    if (keyImages[monsterHpKeys[i]][j].gameObject.activeInHierarchy){
-                        keyImages[monsterHpKeys[i]][j].gameObject.SetActive(false);
-                        break;
-                    }
-                }
+        
+        Debug.Log("Key: " + key);
+        Debug.Log("HP: " + monsterHpKeys[0]);
+        if(monsterHpKeys[0].Equals(key)){
+            monsterHp--;
 
-                break;
+
+            if(monsterHp <= 0){
+                Death();
             }
+            for (int j = 0; j < keyImages[monsterHpKeys[0]].Length; j++){
+                if (keyImages[monsterHpKeys[0]][j].gameObject.activeInHierarchy){
+                    keyImages[monsterHpKeys[0]][j].enabled = false;
+                    break;
+                }
+            }
+
+            int temp = monsterHpKeys[0];
+            monsterHpKeys[0] = monsterHpKeys[1];  
+            monsterHpKeys[1] = monsterHpKeys[2];  
+            monsterHpKeys[2] = temp;  
+            
+
         }
     }
 
@@ -98,12 +106,14 @@ public class Monster : MonoBehaviour
         };
 
         for(int i = 0; i < monsterHpKeys.Length; i++){
+            Debug.Log(keyImages[monsterHpKeys[i]][getAvailableKeyImage(monsterHpKeys[i])].gameObject);
+            keyImages[monsterHpKeys[i]][getAvailableKeyImage(monsterHpKeys[i])].gameObject.transform.SetAsLastSibling();
             keyImages[monsterHpKeys[i]][getAvailableKeyImage(monsterHpKeys[i])].gameObject.SetActive(true);
         }
 
         moveDirection = (Vector2.zero - (Vector2)gameObject.transform.position).normalized;
         spriteRenderer.flipX = moveDirection.x > 0 ? true : false;
-
+        
         StartCoroutine(ExecuteCoroutine());
     }
 
@@ -133,6 +143,7 @@ public class Monster : MonoBehaviour
 
         for(int i = 0; i < keyImages.Length; i++){
             for(int j = 0; j < keyImages[i].Length; j++){
+                keyImages[i][j].enabled = true;
                 keyImages[i][j].gameObject.SetActive(false);
             }
         }
@@ -140,4 +151,5 @@ public class Monster : MonoBehaviour
         monsterResetAction(this);
         monsterHp = defaultHp;
     }
+
 }
