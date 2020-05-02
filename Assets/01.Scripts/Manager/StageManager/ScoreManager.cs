@@ -8,6 +8,9 @@ using UnityEngine.SceneManagement;
 public class ScoreManager : MonoBehaviour
 {
     [SerializeField]
+    private IntEvent abilityUsed;
+
+    [SerializeField]
     private Text scoreText;
 
     [SerializeField]
@@ -35,6 +38,7 @@ public class ScoreManager : MonoBehaviour
     private float hp;
 
     private Action abilitySkil;
+    private int abilityIndex;
 
     [SerializeField]
     private Sprite defaultHpSprite;
@@ -60,8 +64,7 @@ public class ScoreManager : MonoBehaviour
         this.score += score;
         scoreText.text = this.score.ToString();
 
-
-        abilityGauge += 10;
+        abilityGauge += 1000;
 
         if (abilityGauge >= maxAbilityGauge)
         {
@@ -75,6 +78,7 @@ public class ScoreManager : MonoBehaviour
 
     public void AbilitySkil()
     {
+        abilityUsed?.Invoke(abilityIndex * 2 + 1);
         abilitySkil();
         AbilityGaugeInitialization();
         abilityButton.image.sprite = idleAbilityButtonImage;
@@ -89,8 +93,8 @@ public class ScoreManager : MonoBehaviour
 
     private void ChangeButtonImage()
     {
-        int index = UnityEngine.Random.Range(0, abilityButtonImages.Length);
-        abilityButton.image.sprite = abilityButtonImages[index];
+        abilityIndex = UnityEngine.Random.Range(0, abilityButtonImages.Length);
+        abilityButton.image.sprite = abilityButtonImages[abilityIndex];
     }
 
     public void GetDamage(float damage)
