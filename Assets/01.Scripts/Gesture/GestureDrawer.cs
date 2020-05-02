@@ -60,7 +60,9 @@ public class GestureDrawer : MonoBehaviour
             try
             {
                 var result = PointCloudRecognizer.Classify(candidate, gestures.ToArray());
+#if UNITY_EDITOR
                 Debug.Log($"{result.GestureClass}, {result.Score}");
+#endif
 
                 if (result.Score >= 0.75F)
                 {
