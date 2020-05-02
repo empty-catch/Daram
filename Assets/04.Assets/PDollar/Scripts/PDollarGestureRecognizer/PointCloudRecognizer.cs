@@ -81,17 +81,19 @@ namespace PDollarGestureRecognizer
         {
             float minDistance = float.MaxValue;
             string gestureClass = "";
+            string gestureClass2nd = "";
             foreach (Gesture template in trainingSet)
             {
                 float dist = GreedyCloudMatch(candidate.Points, template.Points);
                 if (dist < minDistance)
                 {
                     minDistance = dist;
+                    gestureClass2nd = gestureClass;
                     gestureClass = template.Name;
                 }
             }
 
-            return gestureClass == "" ? new Result() { GestureClass = "No match", Score = 0.0f } : new Result() { GestureClass = gestureClass, Score = Mathf.Max((minDistance - 2.0f) / -2.0f, 0.0f) };
+            return gestureClass == "" ? new Result() { GestureClass = "No match", GestureClass2nd = "No match", Score = 0.0f } : new Result() { GestureClass = gestureClass, GestureClass2nd = gestureClass2nd, Score = Mathf.Max((minDistance - 2.0f) / -2.0f, 0.0f) };
         }
 
         /// <summary>
