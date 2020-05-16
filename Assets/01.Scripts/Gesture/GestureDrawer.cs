@@ -90,12 +90,8 @@ public class GestureDrawer : MonoBehaviour
                 return 3;
             case "DownArrow":
                 return 4;
-            case "Zigzag":
-                return 5;
             case "UpArrow":
-                return 6;
-            case "Circle":
-                return 7;
+                return 5;
         }
 
         throw new ArgumentException();
