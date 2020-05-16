@@ -8,11 +8,16 @@ public class GestureDrawer : MonoBehaviour
     [SerializeField]
     private new LineRenderer renderer;
     [SerializeField]
-    private TextAsset[] gestureXmls;
+    private TextAsset[] normalXmls;
     [SerializeField]
-    private IntEvent gestureDrawed;
+    private TextAsset[] abilityXmls;
+    [SerializeField]
+    private IntEvent normalDrawed;
+    [SerializeField]
+    private IntEvent abilityDrawed;
 
-    private List<Gesture> gestures = new List<Gesture>();
+    private Gesture[] normalGestures;
+    private Gesture[] abilityGestures;
     private List<Point> points = new List<Point>();
     private Vector3 position;
     private int strokeID = -1;
@@ -20,9 +25,16 @@ public class GestureDrawer : MonoBehaviour
 
     private void Awake()
     {
-        foreach (var xml in gestureXmls)
+        normalGestures = new Gesture[normalXmls.Length];
+        abilityGestures = new Gesture[abilityXmls.Length];
+
+        for (int i = 0; i < normalXmls.Length; i++)
         {
-            gestures.Add(GestureIO.ReadGestureFromXML(xml.text));
+            normalGestures[i] = GestureIO.ReadGestureFromXML(normalXmls[i].text);
+        }
+        for (int i = 0; i < abilityXmls.Length; i++)
+        {
+            abilityGestures[i] = GestureIO.ReadGestureFromXML(abilityXmls[i].text);
         }
     }
 
@@ -60,9 +72,8 @@ public class GestureDrawer : MonoBehaviour
 
             try
             {
-                var result = PointCloudRecognizer.Classify(candidate, gestures.ToArray());
-                gestureDrawed?.Invoke(GetGestureIndex(result.GestureClass));
-
+                var result = PointCloudRecognizer.Classify(candidate, normalGestures);
+                normalDrawed?.Invoke(GetGestureIndex(result.GestureClass));
 #if UNITY_EDITOR
                 Debug.Log($"{result.GestureClass} {result.Score}");
 #endif
@@ -92,6 +103,14 @@ public class GestureDrawer : MonoBehaviour
                 return 4;
             case "UpArrow":
                 return 5;
+            case "Zigzag":
+            case "Wind":
+                return 6;
+            case "Flame":
+            case "Circle":
+                return 7;
+            case "Ice":
+                return 8;
         }
 
         throw new ArgumentException();

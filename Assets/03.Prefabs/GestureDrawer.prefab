@@ -45,14 +45,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 4763031882259839054}
-  gestureXmls:
+  normalXmls:
   - {fileID: 4900000, guid: e19d00785c86ee246b764ebd585cacfc, type: 3}
-  - {fileID: 4900000, guid: d754e713d678d04448168bc145e416c6, type: 3}
   - {fileID: 4900000, guid: 882dd7ac8cc73ef41a66bc300bb2485b, type: 3}
-  - {fileID: 4900000, guid: 7658b1c0cfa39e344bcac76864052491, type: 3}
-  - {fileID: 4900000, guid: 079403e3756762349abfe32797d43b17, type: 3}
   - {fileID: 4900000, guid: 7ee78bb231243884991dd54c564c9bf5, type: 3}
-  gestureDrawed:
+  - {fileID: 4900000, guid: 079403e3756762349abfe32797d43b17, type: 3}
+  - {fileID: 4900000, guid: d754e713d678d04448168bc145e416c6, type: 3}
+  - {fileID: 4900000, guid: 7658b1c0cfa39e344bcac76864052491, type: 3}
+  abilityXmls:
+  - {fileID: 4900000, guid: af545c4d908be5b4a91b2f7f30719ad7, type: 3}
+  - {fileID: 4900000, guid: dd6792b779cf9304c8b70cd5c2692b5d, type: 3}
+  - {fileID: 4900000, guid: 1c1be7b85179b9f45b7c18235cf69132, type: 3}
+  - {fileID: 4900000, guid: e16d531d8606514449167818c55ca353, type: 3}
+  - {fileID: 4900000, guid: 34657ccac58514248b61b3c67d984075, type: 3}
+  normalDrawed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: ActGesture
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: ChangeSprite
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  abilityDrawed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
