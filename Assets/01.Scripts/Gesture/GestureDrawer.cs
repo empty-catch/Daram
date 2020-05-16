@@ -22,6 +22,12 @@ public class GestureDrawer : MonoBehaviour
     private Vector3 position;
     private int strokeID = -1;
     private int positionCount;
+    private bool isAbilityActivated;
+
+    public void ActivateAbility()
+    {
+        isAbilityActivated = true;
+    }
 
     private void Awake()
     {
@@ -72,8 +78,18 @@ public class GestureDrawer : MonoBehaviour
 
             try
             {
-                var result = PointCloudRecognizer.Classify(candidate, normalGestures);
-                normalDrawed?.Invoke(GetGestureIndex(result.GestureClass));
+                Result result;
+                if (isAbilityActivated)
+                {
+                    isAbilityActivated = false;
+                    result = PointCloudRecognizer.Classify(candidate, abilityGestures);
+                    abilityDrawed?.Invoke(GetGestureIndex(result.GestureClass));
+                }
+                else
+                {
+                    result = PointCloudRecognizer.Classify(candidate, normalGestures);
+                    normalDrawed?.Invoke(GetGestureIndex(result.GestureClass));
+                }
 #if UNITY_EDITOR
                 Debug.Log($"{result.GestureClass} {result.Score}");
 #endif

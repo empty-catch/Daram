@@ -15561,8 +15561,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1923688230}
-        m_MethodName: AbilitySkil
+      - m_Target: {fileID: 2068448204}
+        m_MethodName: ActivateAbility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19760,20 +19760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064ad419b8b674a4d86d27a3623f045b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityUsed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 399416253}
-        m_MethodName: ChangeSprite
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   scoreText: {fileID: 688012847}
   hpImages:
   - {fileID: 1487286910}
@@ -21488,7 +21474,7 @@ PrefabInstance:
         type: 3}
       propertyPath: abilityDrawed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1923688229}
+      objectReference: {fileID: 1923688230}
     - target: {fileID: 4763031882122199703, guid: ed4f33595c5018443b6e6742a3129b3e,
         type: 3}
       propertyPath: abilityDrawed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -21496,6 +21482,18 @@ PrefabInstance:
       objectReference: {fileID: 399416253}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4f33595c5018443b6e6742a3129b3e, type: 3}
+--- !u!114 &2068448204 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4763031882122199703, guid: ed4f33595c5018443b6e6742a3129b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2068448203}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e168eb856e765b4fb9d8058c9b32767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2076895301
 GameObject:
   m_ObjectHideFlags: 0
