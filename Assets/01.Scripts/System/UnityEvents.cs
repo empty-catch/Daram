@@ -3,3 +3,9 @@ using UnityEngine.Events;
 
 [Serializable]
 public class IntEvent : UnityEvent<int> { }
+
+[Serializable]
+public class FloatEvent : UnityEvent<float> { }
+
+[Serializable]
+public class MonsterEvent : UnityEvent<Monster> { } 
