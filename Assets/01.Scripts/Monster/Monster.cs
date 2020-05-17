@@ -152,6 +152,7 @@ public class Monster : MonoBehaviour
         gameObject.SetActive(false);
         monsterResetAction(this);
         monsterHp = UnityEngine.Random.Range(1,5);
+        monsterHpKeys = new int[monsterHp];
         speed = defaultSpeed;
     }
 
