@@ -58,6 +58,8 @@ public class Monster : MonoBehaviour
         }
     }
 
+
+    // StageManager의 Start 함수에서 설정 해 줌
     public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction){
         this.monsterGenerateAction = monsterGenerateAction;
         this.monsterResetAction = monsterResetAction;
