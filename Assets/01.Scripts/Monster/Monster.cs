@@ -68,27 +68,26 @@ public class Monster : MonoBehaviour
     }
 
     public void GetDamage(int key){
-        
         if(monsterHpKeys[0].Equals(key)){
             monsterHp--;
-
 
             if(monsterHp <= 0){
                 Death();
                 return;
             }
     
-            for (int j = 0; j < keyImages[monsterHpKeys[0]].Length; j++){
-                if (keyImages[monsterHpKeys[0]][j].enabled.Equals(true)){
-                    keyImages[monsterHpKeys[0]][j].enabled = false;
+            for (int i = 0; i < keyImages[monsterHpKeys[0]].Length; i++){
+                if (keyImages[monsterHpKeys[0]][i].enabled.Equals(true)){
+                    keyImages[monsterHpKeys[0]][i].enabled = false;
                     break;
                 }
             }
-            int temp = monsterHpKeys[0];
-            monsterHpKeys[0] = monsterHpKeys[1];  
-            monsterHpKeys[1] = monsterHpKeys[2];  
-            monsterHpKeys[2] = temp;  
 
+            int temp = monsterHpKeys[0];
+            for(int i = 0; i < monsterHpKeys.Length; i++){
+                monsterHpKeys[i] = i.Equals(monsterHpKeys.Length - 1)
+                ? temp : monsterHpKeys[i+1];
+            }
         }
     }
 
