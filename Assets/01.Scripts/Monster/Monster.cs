@@ -16,8 +16,6 @@ public class Monster : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     [Header("Values")]
-    [SerializeField]
-    private int defaultHp;
     private int monsterHp;
     
     private int[] monsterHpKeys;
@@ -38,7 +36,7 @@ public class Monster : MonoBehaviour
     private void Awake(){
         keyImages = new Image[8][];
 
-        monsterHp = defaultHp;
+        monsterHp = UnityEngine.Random.Range(1,5);
         monsterHpKeys = new int[monsterHp];
 
         speed = defaultSpeed;
@@ -153,7 +151,7 @@ public class Monster : MonoBehaviour
 
         gameObject.SetActive(false);
         monsterResetAction(this);
-        monsterHp = defaultHp;
+        monsterHp = UnityEngine.Random.Range(1,5);
         speed = defaultSpeed;
     }
 
