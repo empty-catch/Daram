@@ -7,6 +7,8 @@ public class AbilityInfo : ScriptableObject
     [SerializeField]
     private Info[] info;
 
+    public Info this[int i] => info[i];
+
     [Serializable]
     public struct Info
     {

@@ -60,7 +60,7 @@ public class Monster : MonoBehaviour
     }
 
     public void GetDamage(int key){
-        
+
         if(monsterHpKeys[0].Equals(key)){
             monsterHp--;
 
@@ -69,7 +69,7 @@ public class Monster : MonoBehaviour
                 Death();
                 return;
             }
-    
+
             for (int j = 0; j < keyImages[monsterHpKeys[0]].Length; j++){
                 if (keyImages[monsterHpKeys[0]][j].enabled.Equals(true)){
                     keyImages[monsterHpKeys[0]][j].enabled = false;
@@ -77,9 +77,9 @@ public class Monster : MonoBehaviour
                 }
             }
             int temp = monsterHpKeys[0];
-            monsterHpKeys[0] = monsterHpKeys[1];  
-            monsterHpKeys[1] = monsterHpKeys[2];  
-            monsterHpKeys[2] = temp;  
+            monsterHpKeys[0] = monsterHpKeys[1];
+            monsterHpKeys[1] = monsterHpKeys[2];
+            monsterHpKeys[2] = temp;
 
         }
     }
@@ -110,7 +110,7 @@ public class Monster : MonoBehaviour
 
         moveDirection = (Vector2.zero - (Vector2)gameObject.transform.position).normalized;
         spriteRenderer.flipX = moveDirection.x > 0 ? true : false;
-        
+
         StartCoroutine(ExecuteCoroutine());
     }
 
@@ -141,7 +141,7 @@ public class Monster : MonoBehaviour
             for(int j = 0; j < keyImages[i].Length; j++){
                 keyImages[i][j].enabled = true;
                 keyImages[i][j].gameObject.SetActive(false);
-                Debug.Log(keyImages[i][j].enabled);
+                // Debug.Log(keyImages[i][j].enabled);
             }
         }
 

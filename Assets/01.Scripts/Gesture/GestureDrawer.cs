@@ -120,15 +120,16 @@ public class GestureDrawer : MonoBehaviour
             case "UpArrow":
                 return 5;
             case "Zigzag":
-            case "Wind":
                 return 6;
-            case "Flame":
-            case "Circle":
+            case "Wind":
                 return 7;
-            case "Ice":
+            case "Flame":
                 return 8;
+            case "Circle":
+                return 9;
+            case "Ice":
+                return 10;
         }
-
         throw new ArgumentException();
     }
 }
