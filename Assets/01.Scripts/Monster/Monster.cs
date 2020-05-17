@@ -5,9 +5,6 @@ using UnityEngine.UI;
 using System;
 public class Monster : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
-
     private Vector2 moveDirection;
 
     private Action<Monster> monsterGenerateAction;
@@ -18,10 +15,16 @@ public class Monster : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    [Header("Values")]
     [SerializeField]
     private int defaultHp;
     private int monsterHp;
+    
     private int[] monsterHpKeys;
+
+    [SerializeField]
+    private float defaultSpeed;
+    private float speed;
 
     [SerializeField]
     private float damage;
@@ -37,6 +40,9 @@ public class Monster : MonoBehaviour
 
         monsterHp = defaultHp;
         monsterHpKeys = new int[monsterHp];
+
+        speed = defaultSpeed;
+
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         GameObject childObject = gameObject.transform.GetChild(0).gameObject;
@@ -141,13 +147,13 @@ public class Monster : MonoBehaviour
             for(int j = 0; j < keyImages[i].Length; j++){
                 keyImages[i][j].enabled = true;
                 keyImages[i][j].gameObject.SetActive(false);
-                Debug.Log(keyImages[i][j].enabled);
             }
         }
 
         gameObject.SetActive(false);
         monsterResetAction(this);
         monsterHp = defaultHp;
+        speed = defaultSpeed;
     }
 
 }
