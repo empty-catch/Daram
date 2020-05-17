@@ -16,7 +16,7 @@ public class Ability : MonoBehaviour
 
         if (canExecute)
         {
-            abilities[index].Execute(infos[index][level]);
+            abilities[index].Execute(infos[index][level], Cooldown);
         }
     }
 
@@ -27,6 +27,13 @@ public class Ability : MonoBehaviour
         abilities[2] = new LightningAbility();
         abilities[3] = new LightningAbility();
         abilities[4] = new LightningAbility();
+    }
+
+    private void Cooldown(float cooldown)
+    {
+        canExecute = false;
+        // cooldown초 대기
+        canExecute = true;
     }
 
     private int GetLevel(int index)
