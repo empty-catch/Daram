@@ -29,6 +29,11 @@ public class Ability : MonoBehaviour
         }
     }
 
+    public void EarnMana()
+    {
+        mana += 7;
+    }
+
     private void Awake()
     {
         abilities[0] = new LightningAbility();

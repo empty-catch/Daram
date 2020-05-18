@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class StageManager : MonoBehaviour
 {
+    [SerializeField]
+    private Ability ability;
+
     private MonsterCreator monsterCreator;
     private MonsterDamageController monsterDamageController;
     private PlayerGestureController playerGestureController;
@@ -22,16 +25,17 @@ public class StageManager : MonoBehaviour
 
     private void Start(){
         playerGestureController.SettingGestureAction(monsterDamageController.AttackMonsters);
-        
+
         scoreManager.SettingAbilitySkil(monsterDamageController.MonsterAllDeath);
 
         monsterCreator.MonsterList.ForEach((monster) => {
             monster.SettingActions(
-                monsterDamageController.AddActiveMonster, 
-                monsterDamageController.RemoveActiveMonster, 
-                scoreManager.GetDamage, 
-                scoreManager.ScoreUp
-            );        
+                monsterDamageController.AddActiveMonster,
+                monsterDamageController.RemoveActiveMonster,
+                scoreManager.GetDamage,
+                scoreManager.ScoreUp,
+                ability.EarnMana
+            );
         });
 
         StartCoroutine(MonsterGenerateCoroutine());

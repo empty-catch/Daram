@@ -19,6 +19,8 @@ public class Monster : MonoBehaviour
     private Action<int> monsterDeathAction;
     private Action<float> monsterAttackAction;
 
+    private Action monsterDamageAction;
+
     private SpriteRenderer spriteRenderer;
 
     [SerializeField]
@@ -56,11 +58,12 @@ public class Monster : MonoBehaviour
         }
     }
 
-    public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction){
+    public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction, Action monsterDamageAction){
         this.monsterGenerateAction = monsterGenerateAction;
         this.monsterResetAction = monsterResetAction;
         this.monsterAttackAction = monsterAttackAction;
         this.monsterDeathAction = monsterDeathAction;
+        this.monsterDamageAction = monsterDamageAction;
     }
 
     public void SetAuraFor(Aura aura, float time){
@@ -74,14 +77,17 @@ public class Monster : MonoBehaviour
     }
 
     public void GetDamage(){
-        GetDamage(monsterHpKeys[0]);
+        GetDamage(monsterHpKeys[0], true);
     }
 
-    public void GetDamage(int key){
+    public void GetDamage(int key, bool byAbility = false){
 
         if(monsterHpKeys[0].Equals(key)){
             monsterHp--;
 
+            if (!byAbility){
+                monsterDamageAction?.Invoke();
+            }
 
             if(monsterHp <= 0){
                 Death();
@@ -98,7 +104,6 @@ public class Monster : MonoBehaviour
             monsterHpKeys[0] = monsterHpKeys[1];
             monsterHpKeys[1] = monsterHpKeys[2];
             monsterHpKeys[2] = temp;
-
         }
     }
 

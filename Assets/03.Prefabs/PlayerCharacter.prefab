@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f65960451505f4ba12cab9c0284e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monsterDamageController: {fileID: 0}
   infos:
   - {fileID: 11400000, guid: 7e75ff861689cb44ea2b07aad6adef76, type: 2}
   - {fileID: 11400000, guid: 9616acca31c3bee4ab4829fa230c7f19, type: 2}
