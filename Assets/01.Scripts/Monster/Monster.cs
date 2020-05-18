@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using DG.Tweening;
+
 public class Monster : MonoBehaviour
 {
     [SerializeField]
     private float speed;
+    private float currentSpeed;
 
     private Vector2 moveDirection;
 
@@ -30,9 +33,10 @@ public class Monster : MonoBehaviour
     private int score;
 
     private Image[][] keyImages;
-
+    private Aura aura;
 
     private void Awake(){
+        currentSpeed = speed;
         keyImages = new Image[8][];
 
         monsterHp = defaultHp;
@@ -57,6 +61,20 @@ public class Monster : MonoBehaviour
         this.monsterResetAction = monsterResetAction;
         this.monsterAttackAction = monsterAttackAction;
         this.monsterDeathAction = monsterDeathAction;
+    }
+
+    public void SetAuraFor(Aura aura, float time){
+        this.aura = aura;
+        DOVirtual.DelayedCall(time, () => aura = Aura.None);
+    }
+
+    public void SetSpeedFor(float percentage, float time){
+        currentSpeed = speed * percentage;
+        DOVirtual.DelayedCall(time, () => currentSpeed = speed);
+    }
+
+    public void GetDamage(){
+        GetDamage(monsterHpKeys[0]);
     }
 
     public void GetDamage(int key){
@@ -116,7 +134,7 @@ public class Monster : MonoBehaviour
 
     private IEnumerator ExecuteCoroutine(){
         while(true){
-            gameObject.transform.Translate(moveDirection * speed);
+            gameObject.transform.Translate(moveDirection * currentSpeed);
             yield return YieldInstructionCache.WaitFrame;
 
             if(gameObject.transform.position.x * moveDirection.x > -2){
