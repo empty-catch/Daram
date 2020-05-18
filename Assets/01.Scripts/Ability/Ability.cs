@@ -37,7 +37,7 @@ public class Ability : MonoBehaviour
     private void Awake()
     {
         abilities[0] = new LightningAbility();
-        abilities[1] = new LightningAbility();
+        abilities[1] = new WindAbility();
         abilities[2] = new LightningAbility();
         abilities[3] = new LightningAbility();
         abilities[4] = new LightningAbility();

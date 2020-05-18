@@ -9,6 +9,7 @@ public class LightningAbility : IAbility
             var monster = activeMonsters[i];
             monster.SetSpeedFor(0F, info.duration);
             monster.SetAuraFor(Aura.Lightning, info.auraDuration);
+
             if (removal < info.removalCount)
             {
                 monster.GetDamage();
