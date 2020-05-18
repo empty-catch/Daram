@@ -10,8 +10,9 @@ public class Ability : MonoBehaviour
     [SerializeField]
     private AbilityInfo[] infos;
     private IAbility[] abilities;
+
     private int mana;
-    private bool canExecute;
+    private bool canExecute = true;
 
     public void Execute(int index)
     {
