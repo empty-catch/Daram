@@ -32,14 +32,19 @@ public class Ability : MonoBehaviour
         }
     }
 
+    public void EarnMana(int amount)
+    {
+        mana += amount;
+    }
+
     public void EarnMana(int amount, int repeat)
     {
         IEnumerator Coroutine()
         {
             for (int i = 0; i < repeat; i++)
             {
-                mana += amount;
                 yield return YieldInstructionCache.WaitingSecond(1F);
+                mana += amount;
             }
         }
 

@@ -16,33 +16,38 @@ public class StageManager : MonoBehaviour
     [SerializeField]
     private float monsterGenenrateInterval;
 
-    private void Awake(){
+    private void Awake()
+    {
         monsterCreator = gameObject.GetComponent<MonsterCreator>();
         monsterDamageController = gameObject.GetComponent<MonsterDamageController>();
         playerGestureController = gameObject.GetComponent<PlayerGestureController>();
         scoreManager = gameObject.GetComponent<ScoreManager>();
     }
 
-    private void Start(){
+    private void Start()
+    {
         playerGestureController.SettingGestureAction(monsterDamageController.AttackMonsters);
 
         scoreManager.SettingAbilitySkil(monsterDamageController.MonsterAllDeath);
 
-        monsterCreator.MonsterList.ForEach((monster) => {
+        monsterCreator.MonsterList.ForEach((monster) =>
+        {
             monster.SettingActions(
                 monsterDamageController.AddActiveMonster,
                 monsterDamageController.RemoveActiveMonster,
                 scoreManager.GetDamage,
                 scoreManager.ScoreUp,
-                () => ability.EarnMana(7, 1)
+                () => ability.EarnMana(7)
             );
         });
 
         StartCoroutine(MonsterGenerateCoroutine());
     }
 
-    private IEnumerator MonsterGenerateCoroutine(){
-        while(true){
+    private IEnumerator MonsterGenerateCoroutine()
+    {
+        while (true)
+        {
             monsterCreator.Execute();
             yield return YieldInstructionCache.WaitingSecond(monsterGenenrateInterval);
         }
