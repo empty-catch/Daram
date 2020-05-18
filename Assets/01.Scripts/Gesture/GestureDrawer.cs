@@ -81,9 +81,9 @@ public class GestureDrawer : MonoBehaviour
                 Result result;
                 if (isAbilityActivated)
                 {
-                    isAbilityActivated = false;
                     result = PointCloudRecognizer.Classify(candidate, abilityGestures);
                     abilityDrawed?.Invoke(GetGestureIndex(result.GestureClass));
+                    isAbilityActivated = false;
                 }
                 else
                 {
