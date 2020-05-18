@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerCharacterController : MonoBehaviour
 {
@@ -9,8 +10,7 @@ public class PlayerCharacterController : MonoBehaviour
     private Sprite[] sprites;
 
     private new SpriteRenderer renderer;
-    private IEnumerator recoverSprite;
-    private WaitForSeconds wait = new WaitForSeconds(0.5F);
+    private Tween tween;
 
     private void Awake()
     {
@@ -20,19 +20,7 @@ public class PlayerCharacterController : MonoBehaviour
     public void ChangeSprite(int key)
     {
         renderer.sprite = sprites[key];
-
-        if (recoverSprite != null)
-        {
-            StopCoroutine(recoverSprite);
-        }
-
-        recoverSprite = RecoverSprite();
-        StartCoroutine(recoverSprite);
-    }
-
-    private IEnumerator RecoverSprite()
-    {
-        yield return wait;
-        renderer.sprite = idleSprite;
+        tween?.Kill();
+        tween = DOVirtual.DelayedCall(0.5F, () => renderer.sprite = idleSprite);
     }
 }
