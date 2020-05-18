@@ -81,8 +81,10 @@ public class Monster : MonoBehaviour
         speedTween = DOVirtual.DelayedCall(time, () => currentSpeed = speed);
     }
 
-    public void GetDamage(){
-        GetDamage(monsterHpKeys[0], true);
+    public void GetDamage(int amount){
+        for (int i = 0; i < amount && monsterHp > 0; i++){
+            GetDamage(monsterHpKeys[0], true);
+        }
     }
 
     public void GetDamage(int key, bool byAbility = false){
