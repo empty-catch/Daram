@@ -1,22 +1,16 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class FlameAbility : IAbility
 {
-    private Action<int> burn;
-    private Action<GameObject> destroy;
-    private Sprite sprite;
+    private System.Action<int> burn;
 
-    public FlameAbility(Action<int> burn, Action<GameObject> destroy, Sprite sprite)
+    public FlameAbility(System.Action<int> burn)
     {
         this.burn = burn;
-        this.destroy = destroy;
-        this.sprite = sprite;
     }
 
-    public void Execute(List<Monster> activeMonsters, AbilityInfo.Info info)
+    public void Execute(List<Monster> activeMonsters, AbilityInfo.Info info, GameObject effect)
     {
         for (int i = 0; i < info.hitCount; i++)
         {
@@ -24,10 +18,8 @@ public class FlameAbility : IAbility
             burn?.Invoke((int)info.duration);
             monster.GetDamage(info.removalCount);
 
-            var renderer = new GameObject().AddComponent<SpriteRenderer>();
-            renderer.transform.position = monster.transform.position;
-            renderer.sprite = sprite;
-            DOVirtual.DelayedCall(0.3F, () => destroy?.Invoke(renderer.gameObject));
+            var gObj = Object.Instantiate(effect, monster.transform.position, Quaternion.identity);
+            Object.Destroy(gObj, 0.5F);
         }
     }
 }

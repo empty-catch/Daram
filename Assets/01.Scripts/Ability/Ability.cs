@@ -9,12 +9,12 @@ public class Ability : MonoBehaviour
     [SerializeField]
     private MonsterDamageController monsterDamageController;
     [SerializeField]
-    private Sprite flamePillar;
-    [SerializeField]
     private AbilityInfo[] infos;
+    [SerializeField]
+    private GameObject[] effects;
     private IAbility[] abilities = new IAbility[5];
 
-    private int mana;
+    private int mana = 100;
     private bool canExecute = true;
 
     public void Execute(int index)
@@ -28,7 +28,7 @@ public class Ability : MonoBehaviour
             mana -= info.manaCost;
             canExecute = false;
             DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
-            abilities[index].Execute(monsterDamageController.ActiveMonsters, info);
+            abilities[index].Execute(monsterDamageController.ActiveMonsters, info, effects[index]);
         }
     }
 
@@ -55,7 +55,7 @@ public class Ability : MonoBehaviour
     {
         abilities[0] = new LightningAbility();
         abilities[1] = new WindAbility();
-        abilities[2] = new FlameAbility(repeat => EarnMana(3, repeat), gObj => Destroy(gObj), flamePillar);
+        abilities[2] = new FlameAbility(repeat => EarnMana(3, repeat));
         abilities[3] = new LightningAbility();
         abilities[4] = new LightningAbility();
     }

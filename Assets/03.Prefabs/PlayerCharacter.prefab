@@ -46,13 +46,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterDamageController: {fileID: 0}
-  flamePillar: {fileID: 21300000, guid: cb5ef030e4e7c4a03ad2fa75acfa40d6, type: 3}
   infos:
   - {fileID: 11400000, guid: 7e75ff861689cb44ea2b07aad6adef76, type: 2}
   - {fileID: 11400000, guid: 9616acca31c3bee4ab4829fa230c7f19, type: 2}
   - {fileID: 11400000, guid: a75388a501420624896542048bb85262, type: 2}
   - {fileID: 11400000, guid: 595b2004da9ff734fbe1940fea9f3431, type: 2}
   - {fileID: 11400000, guid: ee54da7b2d4faaa48b42cfc902be43c3, type: 2}
+  effects:
+  - {fileID: 2042520737045898208, guid: c91645f3eed410149a7ae5d77c8a16a0, type: 3}
+  - {fileID: 6629139817579914795, guid: 870b31fecca66884ca2caea971c11c14, type: 3}
+  - {fileID: 7903809764147024247, guid: be6013d52fb74774d8cbbf3658501dc0, type: 3}
+  - {fileID: 7430948315243401450, guid: 732a6c847e77e0b4c85e75ab4d2ecba2, type: 3}
+  - {fileID: 0}
 --- !u!114 &8831746405217942464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +121,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: 7074097cc226a482a9ccd4af6cea1871, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
