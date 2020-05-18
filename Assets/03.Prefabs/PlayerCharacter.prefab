@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterDamageController: {fileID: 0}
+  flamePillar: {fileID: 21300000, guid: cb5ef030e4e7c4a03ad2fa75acfa40d6, type: 3}
   infos:
   - {fileID: 11400000, guid: 7e75ff861689cb44ea2b07aad6adef76, type: 2}
   - {fileID: 11400000, guid: 9616acca31c3bee4ab4829fa230c7f19, type: 2}
