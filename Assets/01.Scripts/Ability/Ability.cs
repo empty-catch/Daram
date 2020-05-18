@@ -9,7 +9,7 @@ public class Ability : MonoBehaviour
     private MonsterDamageController monsterDamageController;
     [SerializeField]
     private AbilityInfo[] infos;
-    private IAbility[] abilities;
+    private IAbility[] abilities = new IAbility[5];
 
     private int mana;
     private bool canExecute = true;

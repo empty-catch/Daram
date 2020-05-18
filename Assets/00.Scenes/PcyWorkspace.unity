@@ -19835,6 +19835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b4a3541ba4a54258939edfd72d6ca2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ability: {fileID: 399416254}
   monsterGenenrateInterval: 3
 --- !u!4 &1923688234
 Transform:
