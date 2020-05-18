@@ -1,6 +1,7 @@
 using System;
+using System.Collections.Generic;
 
 public interface IAbility
 {
-    void Execute(AbilityInfo.Info info, Action<float> callback);
+    void Execute(List<Monster> activeMonsters, AbilityInfo.Info info);
 }

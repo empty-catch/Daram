@@ -1,9 +1,9 @@
+using System.Collections.Generic;
 using System;
 
 public class LightningAbility : IAbility
 {
-    public void Execute(AbilityInfo.Info info, Action<float> callback)
+    public void Execute(List<Monster> activeMonsters, AbilityInfo.Info info)
     {
-        callback?.Invoke(info.cooldown);
     }
 }

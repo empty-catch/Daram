@@ -4,27 +4,27 @@ using UnityEngine;
 
 public class MonsterDamageController : MonoBehaviour
 {
-   
-   private List<Monster> activeMonsterList = new List<Monster>();
+    private List<Monster> activeMonsterList = new List<Monster>();
+    public List<Monster> ActiveMonsters => activeMonsterList;
 
-   public void AddActiveMonster(Monster monster){
+    public void AddActiveMonster(Monster monster){
        activeMonsterList.Add(monster);
-   }
+    }
 
-   public void RemoveActiveMonster(Monster monster){
+    public void RemoveActiveMonster(Monster monster){
        activeMonsterList.Remove(monster);
-   }
+    }
 
-   public void AttackMonsters(int key){
-       for(int i = 0; i < activeMonsterList.Count; i++){
+    public void AttackMonsters(int key){
+        for(int i = 0; i < activeMonsterList.Count; i++){
            activeMonsterList[i].GetDamage(key);
-       }
-   }
+        }
+    }
 
-   public void MonsterAllDeath(){
+    public void MonsterAllDeath(){
         int reapetCount = activeMonsterList.Count;
         for(int i = 0; i < reapetCount; i++){
            activeMonsterList[0].Death();
         }
-   }
+    }
 }

@@ -1,8 +1,12 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
+using DG.Tweening;
 
 public class Ability : MonoBehaviour
 {
+    [SerializeField]
+    private MonsterDamageController monsterDamageController;
     [SerializeField]
     private AbilityInfo[] infos;
     private IAbility[] abilities;
@@ -13,10 +17,14 @@ public class Ability : MonoBehaviour
     {
         index -= 6;
         int level = GetLevel(index);
+        var info = infos[index][level];
 
-        if (canExecute)
+        if (canExecute && mana >= info.manaCost)
         {
-            abilities[index].Execute(infos[index][level], Cooldown);
+            mana -= info.manaCost;
+            canExecute = false;
+            DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
+            abilities[index].Execute(monsterDamageController.ActiveMonsters, info);
         }
     }
 
@@ -27,13 +35,6 @@ public class Ability : MonoBehaviour
         abilities[2] = new LightningAbility();
         abilities[3] = new LightningAbility();
         abilities[4] = new LightningAbility();
-    }
-
-    private void Cooldown(float cooldown)
-    {
-        canExecute = false;
-        // cooldown초 대기
-        canExecute = true;
     }
 
     private int GetLevel(int index)
