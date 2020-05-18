@@ -125,9 +125,9 @@ public class GestureDrawer : MonoBehaviour
                 return 7;
             case "Flame":
                 return 8;
-            case "Circle":
-                return 9;
             case "Ice":
+                return 9;
+            case "Circle":
                 return 10;
         }
         throw new ArgumentException();

@@ -56,7 +56,7 @@ public class Ability : MonoBehaviour
         abilities[0] = new LightningAbility();
         abilities[1] = new WindAbility();
         abilities[2] = new FlameAbility(repeat => EarnMana(3, repeat));
-        abilities[3] = new LightningAbility();
+        abilities[3] = new IceAbility();
         abilities[4] = new LightningAbility();
     }
 
