@@ -34,7 +34,7 @@ public class StageManager : MonoBehaviour
                 monsterDamageController.RemoveActiveMonster,
                 scoreManager.GetDamage,
                 scoreManager.ScoreUp,
-                ability.EarnMana
+                () => ability.EarnMana(7, 1)
             );
         });
 

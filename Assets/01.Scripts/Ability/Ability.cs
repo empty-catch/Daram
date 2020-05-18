@@ -1,3 +1,4 @@
+using System.Collections;
 using System;
 using UnityEngine;
 using UnityEngine.Events;
@@ -7,6 +8,8 @@ public class Ability : MonoBehaviour
 {
     [SerializeField]
     private MonsterDamageController monsterDamageController;
+    [SerializeField]
+    private Sprite flamePillar;
     [SerializeField]
     private AbilityInfo[] infos;
     private IAbility[] abilities = new IAbility[5];
@@ -29,16 +32,25 @@ public class Ability : MonoBehaviour
         }
     }
 
-    public void EarnMana()
+    public void EarnMana(int amount, int repeat)
     {
-        mana += 7;
+        IEnumerator Coroutine()
+        {
+            for (int i = 0; i < repeat; i++)
+            {
+                mana += amount;
+                yield return YieldInstructionCache.WaitingSecond(1F);
+            }
+        }
+
+        StartCoroutine(Coroutine());
     }
 
     private void Awake()
     {
         abilities[0] = new LightningAbility();
         abilities[1] = new WindAbility();
-        abilities[2] = new LightningAbility();
+        abilities[2] = new FlameAbility(repeat => EarnMana(3, repeat), flamePillar);
         abilities[3] = new LightningAbility();
         abilities[4] = new LightningAbility();
     }
