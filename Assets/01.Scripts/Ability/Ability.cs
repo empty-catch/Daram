@@ -13,9 +13,9 @@ public class Ability : MonoBehaviour
     [SerializeField]
     private GameObject[] effects;
     private IAbility[] abilities = new IAbility[5];
-
-    private int mana = 100;
     private bool canExecute = true;
+
+    public int Mana { get; set; } = 100;
 
     public void Execute(int index)
     {
@@ -23,39 +23,20 @@ public class Ability : MonoBehaviour
         int level = GetLevel(index);
         var info = infos[index][level];
 
-        if (canExecute && mana >= info.manaCost)
+        if (canExecute && Mana >= info.manaCost)
         {
-            mana -= info.manaCost;
+            Mana -= info.manaCost;
             canExecute = false;
             DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
             abilities[index].Execute(monsterDamageController.ActiveMonsters, info, effects[index]);
         }
     }
 
-    public void EarnMana(int amount)
-    {
-        mana += amount;
-    }
-
-    public void EarnMana(int amount, int repeat)
-    {
-        IEnumerator Coroutine()
-        {
-            for (int i = 0; i < repeat; i++)
-            {
-                yield return YieldInstructionCache.WaitingSecond(1F);
-                mana += amount;
-            }
-        }
-
-        StartCoroutine(Coroutine());
-    }
-
     private void Awake()
     {
         abilities[0] = new LightningAbility();
         abilities[1] = new WindAbility();
-        abilities[2] = new FlameAbility(repeat => EarnMana(3, repeat));
+        abilities[2] = new FlameAbility(duration => DOTween.To(() => Mana, i => Mana = i, Mana + (int)duration * 3, duration).SetEase(Ease.Linear));
         abilities[3] = new IceAbility();
         abilities[4] = new EarthAbility();
     }
