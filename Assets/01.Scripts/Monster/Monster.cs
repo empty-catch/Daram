@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using DG.Tweening;
 public class Monster : MonoBehaviour
 {
     private Vector2 moveDirection;
@@ -10,6 +11,7 @@ public class Monster : MonoBehaviour
     private Action<Monster> monsterGenerateAction;
     private Action<Monster> monsterResetAction;
 
+    private Action monsterDamageAction;
     private Action<int> monsterDeathAction;
     private Action<float> monsterAttackAction;
 
@@ -22,6 +24,7 @@ public class Monster : MonoBehaviour
 
     [SerializeField]
     private float defaultSpeed;
+    private float currentSpeed;
     private float speed;
 
     [SerializeField]
@@ -31,6 +34,15 @@ public class Monster : MonoBehaviour
     private int score;
 
     private Image[][] keyImages;
+
+
+    private Tween auraTween;
+    private Tween speedTween;
+
+    private float auraTime;
+
+    public Aura Aura { get; private set; }
+    public int AuraLevel { get; private set; }
 
 
     private void Awake(){
@@ -58,11 +70,36 @@ public class Monster : MonoBehaviour
 
 
     // StageManager의 Start 함수에서 설정 해 줌
-    public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction){
-          this.monsterGenerateAction = monsterGenerateAction;
-          this.monsterResetAction = monsterResetAction;
-          this.monsterAttackAction = monsterAttackAction;
-          this.monsterDeathAction = monsterDeathAction;
+    public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction, Action monsterDamageAction){
+        this.monsterGenerateAction = monsterGenerateAction;
+        this.monsterResetAction = monsterResetAction;
+        this.monsterAttackAction = monsterAttackAction;
+        this.monsterDeathAction = monsterDeathAction;
+        this.monsterDamageAction = monsterDamageAction;
+    }
+
+
+    public void SetAuraFor(Aura aura, int level, float time){
+        Aura = aura;
+        AuraLevel = level;
+        auraTime = time;
+        auraTween?.Kill();
+        auraTween = DOVirtual.DelayedCall(time, () => Aura = Aura.None);
+    }
+
+    public void SetHigherAuraFor(Aura aura, int level, float time){
+        if (AuraLevel > level){
+            SetAuraFor(Aura, AuraLevel, auraTime);
+        }
+        else{
+            SetAuraFor(aura, level, time);
+        }
+    }
+
+    public void SetSpeedFor(float percentage, float time){
+        currentSpeed = speed * percentage;
+        speedTween?.Kill();
+        speedTween = DOVirtual.DelayedCall(time, () => currentSpeed = speed);
     }
 
     public void GetDamage(int key){
