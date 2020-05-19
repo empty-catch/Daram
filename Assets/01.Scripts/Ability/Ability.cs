@@ -32,8 +32,8 @@ public class Ability : MonoBehaviour
         if (canExecute && Mana >= info.manaCost)
         {
             Mana -= info.manaCost;
-            // canExecute = false;
-            // DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
+            canExecute = false;
+            DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
             abilities[index].Execute(monsterDamageController.ActiveMonsters, info, level);
         }
     }
