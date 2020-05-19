@@ -8,9 +8,6 @@ using UnityEngine.SceneManagement;
 public class ScoreManager : MonoBehaviour
 {
     [SerializeField]
-    private IntEvent abilityUsed;
-
-    [SerializeField]
     private Text scoreText;
 
     [SerializeField]
@@ -76,9 +73,8 @@ public class ScoreManager : MonoBehaviour
         abilityGaugeImage.fillAmount = (abilityGauge / maxAbilityGauge);
     }
 
-    public void AbilitySkil()
+    public void AbilitySkil(int gestureIndex)
     {
-        abilityUsed?.Invoke(abilityIndex * 2 + 1);
         abilitySkil();
         AbilityGaugeInitialization();
         abilityButton.image.sprite = idleAbilityButtonImage;

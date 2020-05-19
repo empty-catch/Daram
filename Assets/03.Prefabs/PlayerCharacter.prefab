@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6616594310562652481}
+  - component: {fileID: 3431702389895063597}
   - component: {fileID: 8831746405217942464}
   - component: {fileID: 6616594310562652494}
   m_Layer: 0
@@ -32,6 +33,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3431702389895063597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6616594310562652495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f65960451505f4ba12cab9c0284e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterDamageController: {fileID: 0}
+  infos:
+  - {fileID: 11400000, guid: 7e75ff861689cb44ea2b07aad6adef76, type: 2}
+  - {fileID: 11400000, guid: 9616acca31c3bee4ab4829fa230c7f19, type: 2}
+  - {fileID: 11400000, guid: a75388a501420624896542048bb85262, type: 2}
+  - {fileID: 11400000, guid: 595b2004da9ff734fbe1940fea9f3431, type: 2}
+  - {fileID: 11400000, guid: ee54da7b2d4faaa48b42cfc902be43c3, type: 2}
+  effects:
+  - {fileID: 2042520737045898208, guid: c91645f3eed410149a7ae5d77c8a16a0, type: 3}
+  - {fileID: 6629139817579914795, guid: 870b31fecca66884ca2caea971c11c14, type: 3}
+  - {fileID: 7903809764147024247, guid: be6013d52fb74774d8cbbf3658501dc0, type: 3}
+  - {fileID: 7430948315243401450, guid: 732a6c847e77e0b4c85e75ab4d2ecba2, type: 3}
+  - {fileID: 5193755380259948319, guid: 40aa64430a0b91a41860fbeb5097d3ab, type: 3}
+  windEffects:
+  - {fileID: 5585025497422678406, guid: 57076d76a2831c24ba483a9d47c1890f, type: 3}
+  - {fileID: 1515950921000575701, guid: 172594850dc1a714a91d822e59ddb824, type: 3}
+  - {fileID: 4940947930058179850, guid: 58c1a86d3951b9749835bceca431b61a, type: 3}
+  - {fileID: 210302290486688211, guid: e3ad59f906c7dbd45b2c20196235885d, type: 3}
+  burnEffect: {fileID: 702061907037858554, guid: cfcb4691c3f9ec44787576e81129854a,
+    type: 3}
+  fog: {fileID: 2313514339764989932, guid: 1a164d6aeaf6ab2469fa014607de3b71, type: 3}
 --- !u!114 &8831746405217942464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,9 +85,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: adaa84fadbfc0446995683e5a3212c8f, type: 3}
   - {fileID: 21300000, guid: ed27f6046467b472c937b2eb9b504311, type: 3}
   - {fileID: 21300000, guid: 727dbd7ecd407482bb06c417f1b3ab0d, type: 3}
-  - {fileID: 21300000, guid: e27da3c8a52484600ac1e7481577a947, type: 3}
   - {fileID: 21300000, guid: b64671b9148a24b8a9067d1bf2d0a5ff, type: 3}
-  - {fileID: 21300000, guid: 3a17febb6ad31405c85c3f043bce14ae, type: 3}
+  - {fileID: 21300000, guid: fb711e7db8138450d9f02571a666053e, type: 3}
+  - {fileID: 21300000, guid: fb711e7db8138450d9f02571a666053e, type: 3}
+  - {fileID: 21300000, guid: 3348c48cac6fa4b60b64e91d159fc4b6, type: 3}
+  - {fileID: 21300000, guid: d68be9d57df7540348f49a59d2da1ef5, type: 3}
+  - {fileID: 21300000, guid: 3348c48cac6fa4b60b64e91d159fc4b6, type: 3}
 --- !u!212 &6616594310562652494
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92,7 +129,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: 7074097cc226a482a9ccd4af6cea1871, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
