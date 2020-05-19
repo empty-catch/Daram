@@ -29,18 +29,22 @@ public class LightningAbility : IAbility
                 case Aura.Lightning:
                     LightningSkill(monster, info);
                     monster.SetAuraFor(Aura.Lightning, level, info.auraDuration);
-                    DOVirtual.DelayedCall(0.2F, () =>
+                    DOVirtual.DelayedCall(info.duration + 0.1F, () =>
                     {
                         monster.GetDamage(1);
                         var gObj2 = Object.Instantiate(effect, monster.transform.position + new Vector3(0.5F, 0F), Quaternion.identity);
-                        Object.Destroy(gObj2, info.duration - 0.3F);
+                        Object.Destroy(gObj2, 0.5F);
                     });
                     break;
                 case Aura.Wind:
                     LightningSkill(monster, info);
-                    monster.SetAuraFor(Aura.Lightning, level, info.auraDuration);
-                    var windEffectObj = Object.Instantiate(windEffect, monster.transform.position + new Vector3(0.5F, 0F), Quaternion.identity);
-                    Object.Destroy(windEffectObj, info.duration - 0.1F);
+                    DOVirtual.DelayedCall(info.duration + 0.1F, () =>
+                    {
+                        monster.SetAuraFor(Aura.Lightning, level, info.auraDuration);
+                        monster.SetSpeedFor(0F, 0.5F);
+                        var windEffectObj = Object.Instantiate(windEffect, monster.transform.position + new Vector3(0.5F, 0F), Quaternion.identity);
+                        Object.Destroy(windEffectObj, 0.5F);
+                    });
                     break;
                 case Aura.Flame:
                     LightningSkill(monster, info);
