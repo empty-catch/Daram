@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class EarthAbility : IAbility
 {
@@ -18,12 +19,30 @@ public class EarthAbility : IAbility
 
         foreach (var monster in activeMonsters)
         {
-            if (Mathf.Abs(monster.transform.position.x) <= info.hitCount &&
-                Mathf.Abs(monster.transform.position.y) <= info.hitCount / 2F)
+            switch (monster.Aura)
             {
-                monster.SetSpeedFor(0.2F, info.duration);
-                monster.SetAuraFor(Aura.Earth, level, info.auraDuration);
+                case Aura.None:
+                case Aura.Lightning:
+                case Aura.Wind:
+                case Aura.Flame:
+                case Aura.Ice when monster.AuraLevel <= level:
+                    EarthSkill(monster, info, level);
+                    break;
+                case Aura.Earth:
+                    monster.SetSpeedFor(0F, 0.5F);
+                    DOVirtual.DelayedCall(0.5F, () => EarthSkill(monster, info, level));
+                    break;
             }
+        }
+    }
+
+    private void EarthSkill(Monster monster, AbilityInfo.Info info, int level)
+    {
+        if (Mathf.Abs(monster.transform.position.x) <= info.hitCount &&
+            Mathf.Abs(monster.transform.position.y) <= info.hitCount / 2F)
+        {
+            monster.SetSpeedFor(0.2F, info.duration);
+            monster.SetAuraFor(Aura.Earth, level, info.auraDuration);
         }
     }
 }
