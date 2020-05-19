@@ -65,6 +65,7 @@ MonoBehaviour:
   - {fileID: 210302290486688211, guid: e3ad59f906c7dbd45b2c20196235885d, type: 3}
   burnEffect: {fileID: 702061907037858554, guid: cfcb4691c3f9ec44787576e81129854a,
     type: 3}
+  fog: {fileID: 2313514339764989932, guid: 1a164d6aeaf6ab2469fa014607de3b71, type: 3}
 --- !u!114 &8831746405217942464
 MonoBehaviour:
   m_ObjectHideFlags: 0
