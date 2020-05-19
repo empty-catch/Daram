@@ -12,6 +12,8 @@ public class Ability : MonoBehaviour
     private AbilityInfo[] infos;
     [SerializeField]
     private GameObject[] effects;
+    [SerializeField]
+    private GameObject burnEffect;
     private IAbility[] abilities = new IAbility[5];
     private bool canExecute = true;
 
@@ -36,7 +38,7 @@ public class Ability : MonoBehaviour
     {
         abilities[0] = new LightningAbility();
         abilities[1] = new WindAbility();
-        abilities[2] = new FlameAbility(duration => DOTween.To(() => Mana, i => Mana = i, Mana + (int)duration * 3, duration).SetEase(Ease.Linear));
+        abilities[2] = new FlameAbility(burnEffect, duration => DOTween.To(() => Mana, i => Mana = i, Mana + (int)duration * 3, duration).SetEase(Ease.Linear));
         abilities[3] = new IceAbility();
         abilities[4] = new EarthAbility();
     }

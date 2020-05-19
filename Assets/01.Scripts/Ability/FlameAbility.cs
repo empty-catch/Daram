@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class FlameAbility : IAbility
 {
+    private GameObject burnEffect;
     private System.Action<float> burn;
 
-    public FlameAbility(System.Action<float> burn)
+    public FlameAbility(GameObject burnEffect, System.Action<float> burn)
     {
+        this.burnEffect = burnEffect;
         this.burn = burn;
     }
 
@@ -20,6 +22,8 @@ public class FlameAbility : IAbility
 
             var gObj = Object.Instantiate(effect, monster.transform.position, Quaternion.identity);
             Object.Destroy(gObj, 0.5F);
+            var burnObj = Object.Instantiate(burnEffect, monster.transform);
+            Object.Destroy(burnObj, info.duration);
         }
     }
 }

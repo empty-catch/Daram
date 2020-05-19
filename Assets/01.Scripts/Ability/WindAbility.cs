@@ -13,12 +13,12 @@ public class WindAbility : IAbility
             monster.SetAuraFor(Aura.Wind, info.auraDuration);
 
             DOTween.Sequence()
-            .Append(monster.transform.DOLocalMoveY(1F, 0.2F).SetEase(Ease.OutCubic).SetRelative())
-            .AppendInterval(info.duration - 0.3F)
-            .Append(monster.transform.DOLocalMoveY(-1F, 0.1F).SetEase(Ease.InQuad).SetRelative());
+            .Append(monster.transform.DOLocalMoveY(2.5F, 0.2F).SetEase(Ease.OutCubic).SetRelative())
+            .AppendInterval(info.duration - 0.7F)
+            .Append(monster.transform.DOLocalMoveY(-2.5F, 0.5F).SetEase(Ease.InQuad).SetRelative());
 
             var gObj = Object.Instantiate(effect, monster.transform.position, Quaternion.identity);
-            Object.Destroy(gObj, info.duration - 0.1F);
+            Object.Destroy(gObj, info.duration - 0.5F);
         }
     }
 }

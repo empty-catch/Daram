@@ -58,6 +58,8 @@ MonoBehaviour:
   - {fileID: 7903809764147024247, guid: be6013d52fb74774d8cbbf3658501dc0, type: 3}
   - {fileID: 7430948315243401450, guid: 732a6c847e77e0b4c85e75ab4d2ecba2, type: 3}
   - {fileID: 5193755380259948319, guid: 40aa64430a0b91a41860fbeb5097d3ab, type: 3}
+  burnEffect: {fileID: 702061907037858554, guid: cfcb4691c3f9ec44787576e81129854a,
+    type: 3}
 --- !u!114 &8831746405217942464
 MonoBehaviour:
   m_ObjectHideFlags: 0
