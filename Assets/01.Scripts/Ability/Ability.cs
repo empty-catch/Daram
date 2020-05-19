@@ -41,7 +41,7 @@ public class Ability : MonoBehaviour
     private void Awake()
     {
         Action<float> burn = duration => DOTween.To(() => Mana, i => Mana = i, Mana + (int)duration * 3, duration).SetEase(Ease.Linear);
-        abilities[3] = new IceAbility(effects[3]);
+        abilities[3] = new IceAbility(effects[3], windEffects[2]);
         abilities[0] = new LightningAbility(effects[0], windEffects[0], (abilities[3] as IceAbility).IceSkill);
         abilities[1] = new WindAbility(effects[1], windEffects[0], windEffects[1], burnEffect, windEffects[2], windEffects[3], burn);
         abilities[2] = new FlameAbility(effects[2], burnEffect, windEffects[1], fog, burn, (abilities[3] as IceAbility).IceSkill);
