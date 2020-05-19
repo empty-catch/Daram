@@ -8,21 +8,39 @@ public class GestureDrawer : MonoBehaviour
     [SerializeField]
     private new LineRenderer renderer;
     [SerializeField]
-    private TextAsset[] gestureXmls;
+    private TextAsset[] normalXmls;
     [SerializeField]
-    private IntEvent gestureDrawed;
+    private TextAsset[] abilityXmls;
+    [SerializeField]
+    private IntEvent normalDrawed;
+    [SerializeField]
+    private IntEvent abilityDrawed;
 
-    private List<Gesture> gestures = new List<Gesture>();
+    private Gesture[] normalGestures;
+    private Gesture[] abilityGestures;
     private List<Point> points = new List<Point>();
     private Vector3 position;
     private int strokeID = -1;
     private int positionCount;
+    private bool isAbilityActivated;
+
+    public void ActivateAbility()
+    {
+        isAbilityActivated = true;
+    }
 
     private void Awake()
     {
-        foreach (var xml in gestureXmls)
+        normalGestures = new Gesture[normalXmls.Length];
+        abilityGestures = new Gesture[abilityXmls.Length];
+
+        for (int i = 0; i < normalXmls.Length; i++)
         {
-            gestures.Add(GestureIO.ReadGestureFromXML(xml.text));
+            normalGestures[i] = GestureIO.ReadGestureFromXML(normalXmls[i].text);
+        }
+        for (int i = 0; i < abilityXmls.Length; i++)
+        {
+            abilityGestures[i] = GestureIO.ReadGestureFromXML(abilityXmls[i].text);
         }
     }
 
@@ -60,9 +78,18 @@ public class GestureDrawer : MonoBehaviour
 
             try
             {
-                var result = PointCloudRecognizer.Classify(candidate, gestures.ToArray());
-                gestureDrawed?.Invoke(GetGestureIndex(result.GestureClass));
-
+                Result result;
+                if (isAbilityActivated)
+                {
+                    result = PointCloudRecognizer.Classify(candidate, abilityGestures);
+                    abilityDrawed?.Invoke(GetGestureIndex(result.GestureClass));
+                    isAbilityActivated = false;
+                }
+                else
+                {
+                    result = PointCloudRecognizer.Classify(candidate, normalGestures);
+                    normalDrawed?.Invoke(GetGestureIndex(result.GestureClass));
+                }
 #if UNITY_EDITOR
                 Debug.Log($"{result.GestureClass} {result.Score}");
 #endif
@@ -90,14 +117,19 @@ public class GestureDrawer : MonoBehaviour
                 return 3;
             case "DownArrow":
                 return 4;
-            case "Zigzag":
-                return 5;
             case "UpArrow":
+                return 5;
+            case "Zigzag":
                 return 6;
-            case "Circle":
+            case "Wind":
                 return 7;
+            case "Flame":
+                return 8;
+            case "Ice":
+                return 9;
+            case "Circle":
+                return 10;
         }
-
         throw new ArgumentException();
     }
 }

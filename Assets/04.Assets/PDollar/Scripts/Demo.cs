@@ -81,7 +81,7 @@ public class Demo : MonoBehaviour
                     foreach (LineRenderer lineRenderer in gestureLinesRenderer)
                     {
 
-                        lineRenderer.SetVertexCount(0);
+                        lineRenderer.positionCount = 0;
                         Destroy(lineRenderer.gameObject);
                     }
 
@@ -102,7 +102,7 @@ public class Demo : MonoBehaviour
             {
                 points.Add(new Point(virtualKeyPosition.x, -virtualKeyPosition.y, strokeId));
 
-                currentGestureLineRenderer.SetVertexCount(++vertexCount);
+                currentGestureLineRenderer.positionCount = ++vertexCount;
                 currentGestureLineRenderer.SetPosition(vertexCount - 1, Camera.main.ScreenToWorldPoint(new Vector3(virtualKeyPosition.x, virtualKeyPosition.y, 10)));
             }
         }
