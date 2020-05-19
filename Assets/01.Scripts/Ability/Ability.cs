@@ -13,6 +13,8 @@ public class Ability : MonoBehaviour
     [SerializeField]
     private GameObject[] effects;
     [SerializeField]
+    private GameObject[] windEffects;
+    [SerializeField]
     private GameObject burnEffect;
     private IAbility[] abilities = new IAbility[5];
     private bool canExecute = true;
@@ -28,19 +30,19 @@ public class Ability : MonoBehaviour
         if (canExecute && Mana >= info.manaCost)
         {
             Mana -= info.manaCost;
-            canExecute = false;
-            DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
-            abilities[index].Execute(monsterDamageController.ActiveMonsters, info, effects[index]);
+            // canExecute = false;
+            // DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
+            abilities[index].Execute(monsterDamageController.ActiveMonsters, info, level);
         }
     }
 
     private void Awake()
     {
-        abilities[0] = new LightningAbility();
-        abilities[1] = new WindAbility();
-        abilities[2] = new FlameAbility(burnEffect, duration => DOTween.To(() => Mana, i => Mana = i, Mana + (int)duration * 3, duration).SetEase(Ease.Linear));
-        abilities[3] = new IceAbility();
-        abilities[4] = new EarthAbility();
+        abilities[3] = new IceAbility(effects[3]);
+        abilities[0] = new LightningAbility(effects[0], windEffects[0], (abilities[3] as IceAbility).IceSkill);
+        abilities[1] = new WindAbility(effects[1]);
+        abilities[2] = new FlameAbility(effects[2], burnEffect, duration => DOTween.To(() => Mana, i => Mana = i, Mana + (int)duration * 3, duration).SetEase(Ease.Linear));
+        abilities[4] = new EarthAbility(effects[4]);
     }
 
     private int GetLevel(int index)

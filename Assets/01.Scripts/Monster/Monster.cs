@@ -36,9 +36,13 @@ public class Monster : MonoBehaviour
 
     private Image[][] keyImages;
 
-    private Aura aura;
     private Tween auraTween;
     private Tween speedTween;
+
+    private float auraTime;
+
+    public Aura Aura { get; private set; }
+    public int AuraLevel { get; private set; }
 
     private void Awake(){
         currentSpeed = speed;
@@ -69,10 +73,21 @@ public class Monster : MonoBehaviour
         this.monsterDamageAction = monsterDamageAction;
     }
 
-    public void SetAuraFor(Aura aura, float time){
-        this.aura = aura;
+    public void SetAuraFor(Aura aura, int level, float time){
+        Aura = aura;
+        AuraLevel = level;
+        auraTime = time;
         auraTween?.Kill();
-        auraTween = DOVirtual.DelayedCall(time, () => aura = Aura.None);
+        auraTween = DOVirtual.DelayedCall(time, () => Aura = Aura.None);
+    }
+
+    public void SetHigherAuraFor(Aura aura, int level, float time){
+        if (AuraLevel > level){
+            SetAuraFor(Aura, AuraLevel, auraTime);
+        }
+        else{
+            SetAuraFor(aura, level, time);
+        }
     }
 
     public void SetSpeedFor(float percentage, float time){

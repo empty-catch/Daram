@@ -3,5 +3,5 @@ using UnityEngine;
 
 public interface IAbility
 {
-    void Execute(List<Monster> activeMonsters, AbilityInfo.Info info, GameObject effect);
+    void Execute(List<Monster> activeMonsters, AbilityInfo.Info info, int level);
 }
