@@ -3,14 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-using DG.Tweening;
-
 public class Monster : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
-    private float currentSpeed;
-
     private Vector2 moveDirection;
 
     private Action<Monster> monsterGenerateAction;
@@ -19,14 +13,16 @@ public class Monster : MonoBehaviour
     private Action<int> monsterDeathAction;
     private Action<float> monsterAttackAction;
 
-    private Action monsterDamageAction;
-
     private SpriteRenderer spriteRenderer;
 
-    [SerializeField]
-    private int defaultHp;
+    [Header("Values")]
     private int monsterHp;
+    
     private int[] monsterHpKeys;
+
+    [SerializeField]
+    private float defaultSpeed;
+    private float speed;
 
     [SerializeField]
     private float damage;
@@ -36,20 +32,15 @@ public class Monster : MonoBehaviour
 
     private Image[][] keyImages;
 
-    private Tween auraTween;
-    private Tween speedTween;
-
-    private float auraTime;
-
-    public Aura Aura { get; private set; }
-    public int AuraLevel { get; private set; }
 
     private void Awake(){
-        currentSpeed = speed;
         keyImages = new Image[8][];
 
-        monsterHp = defaultHp;
+        monsterHp = UnityEngine.Random.Range(1,5);
         monsterHpKeys = new int[monsterHp];
+
+        speed = defaultSpeed;
+
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         GameObject childObject = gameObject.transform.GetChild(0).gameObject;
@@ -65,67 +56,36 @@ public class Monster : MonoBehaviour
         }
     }
 
-    public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction, Action monsterDamageAction){
-        this.monsterGenerateAction = monsterGenerateAction;
-        this.monsterResetAction = monsterResetAction;
-        this.monsterAttackAction = monsterAttackAction;
-        this.monsterDeathAction = monsterDeathAction;
-        this.monsterDamageAction = monsterDamageAction;
+
+    // StageManager의 Start 함수에서 설정 해 줌
+    public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction){
+          this.monsterGenerateAction = monsterGenerateAction;
+          this.monsterResetAction = monsterResetAction;
+          this.monsterAttackAction = monsterAttackAction;
+          this.monsterDeathAction = monsterDeathAction;
     }
 
-    public void SetAuraFor(Aura aura, int level, float time){
-        Aura = aura;
-        AuraLevel = level;
-        auraTime = time;
-        auraTween?.Kill();
-        auraTween = DOVirtual.DelayedCall(time, () => Aura = Aura.None);
-    }
-
-    public void SetHigherAuraFor(Aura aura, int level, float time){
-        if (AuraLevel > level){
-            SetAuraFor(Aura, AuraLevel, auraTime);
-        }
-        else{
-            SetAuraFor(aura, level, time);
-        }
-    }
-
-    public void SetSpeedFor(float percentage, float time){
-        currentSpeed = speed * percentage;
-        speedTween?.Kill();
-        speedTween = DOVirtual.DelayedCall(time, () => currentSpeed = speed);
-    }
-
-    public void GetDamage(int amount){
-        for (int i = 0; i < amount && monsterHp > 0; i++){
-            GetDamage(monsterHpKeys[0], true);
-        }
-    }
-
-    public void GetDamage(int key, bool byAbility = false){
-
+    public void GetDamage(int key){
         if(monsterHpKeys[0].Equals(key)){
             monsterHp--;
-
-            if (!byAbility){
-                monsterDamageAction?.Invoke();
-            }
 
             if(monsterHp <= 0){
                 Death();
                 return;
             }
-
-            for (int j = 0; j < keyImages[monsterHpKeys[0]].Length; j++){
-                if (keyImages[monsterHpKeys[0]][j].enabled.Equals(true)){
-                    keyImages[monsterHpKeys[0]][j].enabled = false;
+    
+            for (int i = 0; i < keyImages[monsterHpKeys[0]].Length; i++){
+                if (keyImages[monsterHpKeys[0]][i].enabled.Equals(true)){
+                    keyImages[monsterHpKeys[0]][i].enabled = false;
                     break;
                 }
             }
+
             int temp = monsterHpKeys[0];
-            monsterHpKeys[0] = monsterHpKeys[1];
-            monsterHpKeys[1] = monsterHpKeys[2];
-            monsterHpKeys[2] = temp;
+            for(int i = 0; i < monsterHpKeys.Length; i++){
+                monsterHpKeys[i] = i.Equals(monsterHpKeys.Length - 1)
+                ? temp : monsterHpKeys[i+1];
+            }
         }
     }
 
@@ -155,13 +115,13 @@ public class Monster : MonoBehaviour
 
         moveDirection = (Vector2.zero - (Vector2)gameObject.transform.position).normalized;
         spriteRenderer.flipX = moveDirection.x > 0 ? true : false;
-
+        
         StartCoroutine(ExecuteCoroutine());
     }
 
     private IEnumerator ExecuteCoroutine(){
         while(true){
-            gameObject.transform.Translate(moveDirection * currentSpeed);
+            gameObject.transform.Translate(moveDirection * speed);
             yield return YieldInstructionCache.WaitFrame;
 
             if(gameObject.transform.position.x * moveDirection.x > -2){
@@ -186,13 +146,14 @@ public class Monster : MonoBehaviour
             for(int j = 0; j < keyImages[i].Length; j++){
                 keyImages[i][j].enabled = true;
                 keyImages[i][j].gameObject.SetActive(false);
-                // Debug.Log(keyImages[i][j].enabled);
             }
         }
 
         gameObject.SetActive(false);
         monsterResetAction(this);
-        monsterHp = defaultHp;
+        monsterHp = UnityEngine.Random.Range(1,5);
+        monsterHpKeys = new int[monsterHp];
+        speed = defaultSpeed;
     }
 
 }
