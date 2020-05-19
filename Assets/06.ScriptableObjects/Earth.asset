@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
   - removalCount: 0
-    hitCount: 1
+    hitCount: 2
     auraDuration: 2
     duration: 1.5
     manaCost: 10
     cooldown: 15
   - removalCount: 0
-    hitCount: 2
+    hitCount: 3
     auraDuration: 2
     duration: 2
     manaCost: 23
