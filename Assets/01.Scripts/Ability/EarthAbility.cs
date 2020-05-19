@@ -21,7 +21,7 @@ public class EarthAbility : IAbility
             if (Mathf.Abs(monster.transform.position.x) <= info.hitCount &&
                 Mathf.Abs(monster.transform.position.y) <= info.hitCount / 2F)
             {
-                monster.SetSpeedFor(0.25F, info.duration);
+                monster.SetSpeedFor(0.2F, info.duration);
                 monster.SetAuraFor(Aura.Earth, level, info.auraDuration);
             }
         }
