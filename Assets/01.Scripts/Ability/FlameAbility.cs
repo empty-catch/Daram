@@ -43,7 +43,7 @@ public class FlameAbility : IAbility
                     DOVirtual.DelayedCall(info.duration, () =>
                     {
                         burn?.Invoke(info.duration);
-                        monster.GetDamage(1);
+                        monster.GetDamageInevitably(1);
                         var burnObj = Object.Instantiate(burnEffect, monster.transform);
                         Object.Destroy(burnObj, info.duration);
                     });
@@ -79,7 +79,7 @@ public class FlameAbility : IAbility
     private void FlameSkill(Monster monster, AbilityInfo.Info info, GameObject effect)
     {
         burn?.Invoke(info.duration);
-        monster.GetDamage(info.removalCount);
+        monster.GetDamageInevitably(info.removalCount);
 
         var gObj = Object.Instantiate(effect, monster.transform.position, Quaternion.identity);
         Object.Destroy(gObj, 0.5F);

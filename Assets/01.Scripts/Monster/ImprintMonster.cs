@@ -28,7 +28,7 @@ public class ImprintMonster : Monster
         SetRandomSealGesture();
     }
 
-    public override void GetDamage(int key){
+    public override void GetDamage(int key, bool isByAbility = false){
         base.GetDamage(key);
         seal?.Invoke((int)sealGesture);
     }

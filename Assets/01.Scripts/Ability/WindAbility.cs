@@ -59,7 +59,7 @@ public class WindAbility : IAbility
                 case Aura.Flame:
                     WindSkill(monster, info, flameEffect);
                     monster.SetAuraFor(Aura.Wind, level, info.auraDuration);
-                    monster.GetDamage(1);
+                    monster.GetDamageInevitably(1);
                     burn?.Invoke(info.duration);
                     var burnObj = Object.Instantiate(burnEffect, monster.transform);
                     Object.Destroy(burnObj, info.duration);
@@ -67,7 +67,7 @@ public class WindAbility : IAbility
                 case Aura.Ice:
                     WindSkill(monster, info, iceEffect);
                     monster.SetAuraFor(Aura.Wind, level, info.auraDuration);
-                    monster.GetDamage(1);
+                    monster.GetDamageInevitably(1);
                     break;
                 case Aura.Earth:
                     if (monster.AuraLevel <= level)

@@ -31,7 +31,7 @@ public class LightningAbility : IAbility
                     monster.SetAuraFor(Aura.Lightning, level, info.auraDuration);
                     DOVirtual.DelayedCall(info.duration + 0.1F, () =>
                     {
-                        monster.GetDamage(1);
+                        monster.GetDamageInevitably(1);
                         var gObj2 = Object.Instantiate(effect, monster.transform.position + new Vector3(0.5F, 0F), Quaternion.identity);
                         Object.Destroy(gObj2, 0.5F);
                     });
@@ -55,7 +55,7 @@ public class LightningAbility : IAbility
                     monster.SetHigherAuraFor(Aura.Lightning, level, info.auraDuration);
                     if (level - 2 >= monster.AuraLevel)
                     {
-                        monster.GetDamage(1);
+                        monster.GetDamageInevitably(1);
                     }
                     else
                     {
@@ -78,7 +78,7 @@ public class LightningAbility : IAbility
 
     private void LightningSkill(Monster monster, AbilityInfo.Info info)
     {
-        monster.GetDamage(info.removalCount);
+        monster.GetDamageInevitably(info.removalCount);
         monster.SetSpeedFor(0F, info.duration);
         var gObj = Object.Instantiate(effect, monster.transform.position, Quaternion.identity);
         Object.Destroy(gObj, info.duration - 0.1F);

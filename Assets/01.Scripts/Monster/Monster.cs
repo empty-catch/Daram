@@ -139,9 +139,19 @@ public class Monster : MonoBehaviour
         speedTween = DOVirtual.DelayedCall(time, () => speed = defaultSpeed);
     }
 
-    public virtual void GetDamage(int key){
+    public void GetDamageInevitably(int amount){
+        for (int i = 0; i < amount && monsterHp > 0; i++){
+            GetDamage(monsterHpKeys[0], true);
+        }
+    }
+
+    public virtual void GetDamage(int key, bool byAbility = false){
         if(monsterHpKeys[0].Equals(key)){
             monsterHp--;
+
+            if (!byAbility) {
+                monsterDamageAction?.Invoke();
+            }
 
             if(monsterHp <= 0){
                 Death();
@@ -197,7 +207,7 @@ public class Monster : MonoBehaviour
         while(true){
             gameObject.transform.Translate(moveDirection * speed);
             yield return YieldInstructionCache.WaitFrame;
-            float distance = Vector2.Distance(gameObject.transform.position, Vector2.zero);  
+            float distance = Vector2.Distance(gameObject.transform.position, Vector2.zero);
             if(distance < 1.0f){
                 Attack();
             }
