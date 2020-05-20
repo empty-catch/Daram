@@ -3571,13 +3571,13 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1024825120}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1907718932}
-        m_MethodName: AbilitySkil
+      - m_Target: {fileID: 1466999481}
+        m_MethodName: ActivateAbility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5909,6 +5909,18 @@ PrefabInstance:
       objectReference: {fileID: 1587948727}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4f33595c5018443b6e6742a3129b3e, type: 3}
+--- !u!114 &1466999481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4763031882122199703, guid: ed4f33595c5018443b6e6742a3129b3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1466999480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e168eb856e765b4fb9d8058c9b32767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1472861730
 PrefabInstance:
   m_ObjectHideFlags: 0
