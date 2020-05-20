@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9189604277876358175
 RectTransform:
   m_ObjectHideFlags: 0
@@ -714,7 +714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2721681881162694283
 Transform:
   m_ObjectHideFlags: 0
@@ -796,8 +796,13 @@ MonoBehaviour:
   defaultSpeed: 0.025
   damage: 1
   score: 10
-  auraImage: {fileID: 0}
-  auraSprites: []
+  auraImage: {fileID: 8258861138949807674}
+  auraSprites:
+  - {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d, type: 3}
+  - {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5, type: 3}
+  - {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75, type: 3}
+  - {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4, type: 3}
+  - {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020, type: 3}
   sealGesture: 0
   spriteResources:
   - {fileID: 21300000, guid: e47e5db68a1d24268873aa9707ef0e3e, type: 3}
@@ -806,6 +811,21 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7525e156d7b444535b2027c7afb228ae, type: 3}
   - {fileID: 21300000, guid: 0c0a3e45fa87841b0ae4d8e106cfadbc, type: 3}
   - {fileID: 21300000, guid: da0561b6c849a44f6b9c677a15fde7ad, type: 3}
+  duration: 1
+  seal:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: set_SealedGesture
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2721681881390180122
 GameObject:
   m_ObjectHideFlags: 0

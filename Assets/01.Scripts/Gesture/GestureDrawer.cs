@@ -24,6 +24,8 @@ public class GestureDrawer : MonoBehaviour
     private int positionCount;
     private bool isAbilityActivated;
 
+    public int SealedGesture { get; set; } = -1;
+
     public void ActivateAbility()
     {
         isAbilityActivated = true;
@@ -88,7 +90,11 @@ public class GestureDrawer : MonoBehaviour
                 else
                 {
                     result = PointCloudRecognizer.Classify(candidate, normalGestures);
-                    normalDrawed?.Invoke(GetGestureIndex(result.GestureClass));
+                    var gestureIndex = GetGestureIndex(result.GestureClass);
+                    if (gestureIndex != SealedGesture)
+                    {
+                        normalDrawed?.Invoke(gestureIndex);
+                    }
                 }
 #if UNITY_EDITOR
                 Debug.Log($"{result.GestureClass} {result.Score}");
