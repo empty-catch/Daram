@@ -117,30 +117,39 @@ public class GestureDrawer : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0))
         {
-            var candidate = new Gesture(points.ToArray());
-
             try
             {
-                Result result;
-                if (isAbilityActivated)
+                if ((renderer.GetPosition(0) - renderer.GetPosition(positionCount - 1)).sqrMagnitude >= 0.5F
+                    || positionCount > 10)
                 {
-                    result = PointCloudRecognizer.Classify(candidate, abilityGestures);
-                    abilityDrawed?.Invoke(GetGestureIndex(result.GestureClass));
-                }
-                else
-                {
-                    result = PointCloudRecognizer.Classify(candidate, normalGestures);
-                    var gestureIndex = GetGestureIndex(result.GestureClass);
-                    if (gestureIndex != sealedGesture)
+                    var candidate = new Gesture(points.ToArray());
+                    Result result;
+
+                    if (isAbilityActivated)
                     {
-                        normalDrawed?.Invoke(gestureIndex);
+                        result = PointCloudRecognizer.Classify(candidate, abilityGestures);
+                        abilityDrawed?.Invoke(GetGestureIndex(result.GestureClass));
                     }
-                }
+                    else
+                    {
+                        result = PointCloudRecognizer.Classify(candidate, normalGestures);
+                        var gestureIndex = GetGestureIndex(result.GestureClass);
+                        if (gestureIndex != sealedGesture)
+                        {
+                            normalDrawed?.Invoke(gestureIndex);
+                        }
+                    }
 #if UNITY_EDITOR
-                Debug.Log($"{result.GestureClass} {result.Score}");
+                    Debug.Log($"{result.GestureClass} {result.Score}");
+#endif
+                }
+            }
+            catch (IndexOutOfRangeException)
+            {
+#if UNITY_EDITOR
+                Debug.Log($"Exception");
 #endif
             }
-            catch (IndexOutOfRangeException) { }
 
             strokeID = -1;
             points.Clear();
