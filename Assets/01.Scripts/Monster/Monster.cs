@@ -53,7 +53,7 @@ public class Monster : MonoBehaviour
 
 
     private void Awake(){
-        keyImages = new Image[8][];
+        keyImages = new Image[6][];
 
         monsterHp = UnityEngine.Random.Range(1,5);
         monsterHpKeys = new int[monsterHp];
@@ -64,7 +64,7 @@ public class Monster : MonoBehaviour
 
         GameObject childObject = gameObject.transform.GetChild(0).gameObject;
 
-        for(int i = 0; i < 8; i++){
+        for(int i = 0; i < 6; i++){
             Image[] tempArray = new Image[3];
 
             for(int j =  i * 3; j < i * 3 + 3; j++){
