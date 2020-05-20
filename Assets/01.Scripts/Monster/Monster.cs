@@ -31,6 +31,14 @@ public class Monster : MonoBehaviour
     [SerializeField]
     private int score;
 
+    [Header("Objects")]
+    [SerializeField]
+    private Image auraImage;
+
+    [Header("Resources")]
+    [SerializeField]
+    private Sprite[] auraSprites;
+
     private Image[][] keyImages;
 
     protected SpriteRenderer spriteRenderer;
@@ -77,12 +85,44 @@ public class Monster : MonoBehaviour
     }
 
 
+    private void SetAuraImage(Aura aura){
+
+        auraImage.gameObject.SetActive(true);
+
+        switch(aura){
+            case Aura.Earth:
+            auraImage.sprite = auraSprites[0];
+            break;
+
+            case Aura.Flame:
+            auraImage.sprite = auraSprites[1];
+            break;
+
+            case Aura.Ice:
+            auraImage.sprite = auraSprites[2];
+            break;
+
+            case Aura.Lightning:
+            auraImage.sprite = auraSprites[3];
+            break;
+
+            case Aura.Wind:
+            auraImage.sprite = auraSprites[4];
+            break;
+            
+            default:
+            auraImage.gameObject.SetActive(false);
+            break;
+        }
+    }
+
     public virtual void SetAuraFor(Aura aura, int level, float time){
         Aura = aura;
         AuraLevel = level;
         auraTime = time;
         auraTween?.Kill();
         auraTween = DOVirtual.DelayedCall(time, () => Aura = Aura.None);
+        SetAuraImage(aura);
     }
 
     public virtual void SetHigherAuraFor(Aura aura, int level, float time){
