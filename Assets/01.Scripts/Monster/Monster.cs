@@ -197,8 +197,8 @@ public class Monster : MonoBehaviour
         while(true){
             gameObject.transform.Translate(moveDirection * speed);
             yield return YieldInstructionCache.WaitFrame;
-
-            if(gameObject.transform.position.x * (moveDirection.x) > -2){
+            float distance = Vector2.Distance(gameObject.transform.position, Vector2.zero);  
+            if(distance < 1.0f){
                 Attack();
             }
         }
