@@ -21,7 +21,7 @@ public class Ability : MonoBehaviour
     private IAbility[] abilities = new IAbility[5];
     private bool canExecute = true;
 
-    public int Mana { get; set; } = 10000;
+    public int Mana { get; set; }
 
     public void Execute(int index)
     {
@@ -31,9 +31,9 @@ public class Ability : MonoBehaviour
 
         if (canExecute && Mana >= info.manaCost)
         {
-            // Mana -= info.manaCost;
-            // canExecute = false;
-            // DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
+            Mana -= info.manaCost;
+            canExecute = false;
+            DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
             abilities[index].Execute(monsterDamageController.ActiveMonsters, info, level);
         }
     }
