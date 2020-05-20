@@ -17,12 +17,11 @@ public class Monster : MonoBehaviour
 
     [Header("Values")]
     private int monsterHp;
-    
+
     private int[] monsterHpKeys;
 
     [SerializeField]
     private float defaultSpeed;
-    private float currentSpeed;
     private float speed;
 
     [SerializeField]
@@ -109,7 +108,7 @@ public class Monster : MonoBehaviour
             case Aura.Wind:
             auraImage.sprite = auraSprites[4];
             break;
-            
+
             default:
             auraImage.gameObject.SetActive(false);
             break;
@@ -121,7 +120,7 @@ public class Monster : MonoBehaviour
         AuraLevel = level;
         auraTime = time;
         auraTween?.Kill();
-        auraTween = DOVirtual.DelayedCall(time, () => Aura = Aura.None);
+        auraTween = DOVirtual.DelayedCall(time, () => { Aura = Aura.None; SetAuraImage(Aura); });
         SetAuraImage(aura);
     }
 
@@ -135,9 +134,9 @@ public class Monster : MonoBehaviour
     }
 
     public void SetSpeedFor(float percentage, float time){
-        currentSpeed = speed * percentage;
+        speed = defaultSpeed * percentage;
         speedTween?.Kill();
-        speedTween = DOVirtual.DelayedCall(time, () => currentSpeed = speed);
+        speedTween = DOVirtual.DelayedCall(time, () => speed = defaultSpeed);
     }
 
     public virtual void GetDamage(int key){
@@ -148,7 +147,7 @@ public class Monster : MonoBehaviour
                 Death();
                 return;
             }
-    
+
             for (int i = 0; i < keyImages[monsterHpKeys[0]].Length; i++){
                 if (keyImages[monsterHpKeys[0]][i].enabled.Equals(true)){
                     keyImages[monsterHpKeys[0]][i].enabled = false;
@@ -190,7 +189,7 @@ public class Monster : MonoBehaviour
 
         moveDirection = (Vector2.zero - (Vector2)gameObject.transform.position).normalized;
         spriteRenderer.flipX = moveDirection.x > 0 ? true : false;
-        
+
         StartCoroutine(ExecuteCoroutine());
     }
 
