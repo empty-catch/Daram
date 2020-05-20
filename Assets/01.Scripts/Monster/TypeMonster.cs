@@ -18,7 +18,6 @@ public class TypeMonster : Monster
         var type = Enum.GetValues(typeof(Aura));
         counterType = (Aura) type.GetValue(new System.Random().Next(type.Length));  
 
-        // FIXME : 변경
         switch(counterType){
             case Aura.Earth:
             spriteRenderer.sprite = spriteResources[0];
