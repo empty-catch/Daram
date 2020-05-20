@@ -41,11 +41,15 @@ public class DebuffMonster : Monster
             break;
         }
 
-        toggleDebuff?.Invoke(index);
+        if (type == debuffType.drawReverse){
+            toggleDebuff?.Invoke(index);
+        }
     }
 
     public override void Death(){
         base.Death();
-        toggleDebuff?.Invoke(index);
+        if (type == debuffType.drawReverse){
+            toggleDebuff?.Invoke(index);
+        }
     }
 }
