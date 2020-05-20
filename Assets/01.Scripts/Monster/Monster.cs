@@ -68,6 +68,7 @@ public class Monster : MonoBehaviour
         }
     }
 
+    protected void BaseAwake() => Awake();
 
     // StageManager의 Start 함수에서 설정 해 줌
     public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction, Action monsterDamageAction){
@@ -126,7 +127,7 @@ public class Monster : MonoBehaviour
         }
     }
 
-    public void Execute(){
+    public virtual void Execute(){
         gameObject.SetActive(true);
 
         monsterGenerateAction(this);
@@ -161,7 +162,7 @@ public class Monster : MonoBehaviour
             gameObject.transform.Translate(moveDirection * speed);
             yield return YieldInstructionCache.WaitFrame;
 
-            if(gameObject.transform.position.x * moveDirection.x > -2){
+            if(gameObject.transform.position.x * (moveDirection.x) > -2){
                 Attack();
             }
         }
