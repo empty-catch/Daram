@@ -6,37 +6,39 @@ using UnityEngine;
 
 public class MonsterCreator : MonoBehaviour
 {
+    [Header("Values")]
     [SerializeField]
     private GameObject monstersParentObject;
 
     private List<Monster> monsterList = new List<Monster>();
 
-    private Vector2 leftGeneratePosition;
-    private Vector2 rightGeneratePosition;
-
+    [SerializeField]
+    private Transform[] monsterGeneratePositions;
     public List<Monster> MonsterList => monsterList;
 
     private void Awake(){
-        leftGeneratePosition = Vector2.zero;
-        rightGeneratePosition = Vector2.zero;
-
-        leftGeneratePosition.x = -7.5f;
-        rightGeneratePosition.x = 7.5f;
-
         monsterList = monstersParentObject.GetComponentsInChildren<Monster>(true).ToList();
     }
 
     [ContextMenu("Monster Generate")]
     public void Execute(){
-        Monster generatedMonster;
+        StartCoroutine(ExecuteCoroutine());
+    }
 
-        generatedMonster = GetAvailableMonster();
+    private IEnumerator ExecuteCoroutine(){
+        int randomRepeatIndex = Random.Range(0, 5);
         
-        generatedMonster.gameObject.transform.position = Random.Range(0,2).Equals(0)
-        ? leftGeneratePosition
-        : rightGeneratePosition;
+        for(int i = 0; i < randomRepeatIndex; i++){
+            Monster generatedMonster;
+            int monsterGeneratePositionIndex = Random.Range(0, monsterGeneratePositions.Length);
+                    
+            generatedMonster = GetAvailableMonster();
+            generatedMonster.gameObject.transform.position = monsterGeneratePositions[monsterGeneratePositionIndex].position;
 
-        generatedMonster?.Execute();
+            generatedMonster?.Execute();
+
+            yield return YieldInstructionCache.WaitingSecond(0.2f);
+        }
     }
 
     private Monster GetAvailableMonster(){
