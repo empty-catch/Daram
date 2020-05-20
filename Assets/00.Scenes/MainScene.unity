@@ -240,8 +240,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -257,8 +257,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -360,7 +360,7 @@ PrefabInstance:
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
@@ -472,8 +472,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -494,7 +494,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text:
+  m_Text: 
 --- !u!222 &514197395
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -666,8 +666,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -747,7 +747,7 @@ PrefabInstance:
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
@@ -859,8 +859,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -967,42 +967,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 632888308}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -1012,7 +1012,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -1032,8 +1032,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &649421113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1114,42 +1114,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 649421115}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -1159,7 +1159,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -1179,8 +1179,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &651239963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,8 +1228,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -1271,7 +1271,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -1281,36 +1281,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 679585719}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -1381,7 +1381,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42c4fb35775b4820a2b61c5acaf077c, type: 3}
@@ -1401,8 +1401,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &683754716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1533,7 +1533,7 @@ PrefabInstance:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
@@ -1894,8 +1894,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
     m_Right: 0
@@ -1936,8 +1936,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1955,8 +1955,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -2021,8 +2021,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -2128,42 +2128,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 774394856}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -2173,7 +2173,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -2193,8 +2193,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &863062478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2210,7 +2210,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -2220,36 +2220,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 863062480}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -2320,7 +2320,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42c4fb35775b4820a2b61c5acaf077c, type: 3}
@@ -2340,8 +2340,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &902436711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,42 +2461,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 935267175}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -2506,7 +2506,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -2526,8 +2526,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &981084078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,8 +2575,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -2725,8 +2725,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -2766,7 +2766,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1024825120
@@ -2779,8 +2779,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -2936,7 +2936,7 @@ PrefabInstance:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
@@ -3293,8 +3293,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -3379,7 +3379,7 @@ PrefabInstance:
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
@@ -3459,7 +3459,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -3469,36 +3469,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1179406976}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -3569,7 +3569,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42c4fb35775b4820a2b61c5acaf077c, type: 3}
@@ -3589,8 +3589,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1188266787
 GameObject:
   m_ObjectHideFlags: 0
@@ -3638,7 +3638,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -3648,36 +3648,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1234669245}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -3748,7 +3748,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42c4fb35775b4820a2b61c5acaf077c, type: 3}
@@ -3768,8 +3768,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1249903001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3850,42 +3850,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1249903003}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -3895,7 +3895,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -3915,8 +3915,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1279581803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3932,7 +3932,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -3942,36 +3942,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1279581805}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -4042,7 +4042,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42c4fb35775b4820a2b61c5acaf077c, type: 3}
@@ -4062,8 +4062,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1335660641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4144,42 +4144,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1335660643}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -4189,7 +4189,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -4209,8 +4209,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1357328147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4226,7 +4226,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -4236,36 +4236,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1357328149}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -4336,7 +4336,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42c4fb35775b4820a2b61c5acaf077c, type: 3}
@@ -4356,8 +4356,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1361682223
 GameObject:
   m_ObjectHideFlags: 0
@@ -4387,8 +4387,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -4404,8 +4404,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -4504,8 +4504,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
@@ -4550,7 +4550,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -4560,36 +4560,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1392841767}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -4685,7 +4685,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003251124744292, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -4730,8 +4730,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1440883232
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,8 +4779,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -4876,22 +4876,22 @@ PrefabInstance:
     - target: {fileID: 4763031882122199703, guid: ed4f33595c5018443b6e6742a3129b3e,
         type: 3}
       propertyPath: normalDrawed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1907718931}
     - target: {fileID: 4763031882122199703, guid: ed4f33595c5018443b6e6742a3129b3e,
         type: 3}
       propertyPath: normalDrawed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1587948727}
     - target: {fileID: 4763031882122199703, guid: ed4f33595c5018443b6e6742a3129b3e,
         type: 3}
       propertyPath: abilityDrawed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1670037609}
     - target: {fileID: 4763031882122199703, guid: ed4f33595c5018443b6e6742a3129b3e,
         type: 3}
       propertyPath: abilityDrawed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value:
+      value: 
       objectReference: {fileID: 1587948727}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4f33595c5018443b6e6742a3129b3e, type: 3}
@@ -4905,8 +4905,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e168eb856e765b4fb9d8058c9b32767, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1472861730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4922,7 +4922,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -4932,36 +4932,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1472861732}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -5032,7 +5032,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42c4fb35775b4820a2b61c5acaf077c, type: 3}
@@ -5052,8 +5052,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1506686718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5069,7 +5069,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -5079,36 +5079,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1506686720}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -5179,7 +5179,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42c4fb35775b4820a2b61c5acaf077c, type: 3}
@@ -5199,8 +5199,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1587948727 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8831746405217942464, guid: 883ddb79a64b8564d9214dc8890437cd,
@@ -5211,8 +5211,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0aa971d0ce3e8f74bbe1ca1516cf5424, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1670037608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5223,8 +5223,13 @@ PrefabInstance:
     - target: {fileID: 3431702389895063597, guid: 883ddb79a64b8564d9214dc8890437cd,
         type: 3}
       propertyPath: monsterDamageController
-      value:
+      value: 
       objectReference: {fileID: 1907718930}
+    - target: {fileID: 3431702389895063597, guid: 883ddb79a64b8564d9214dc8890437cd,
+        type: 3}
+      propertyPath: manaChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1907718932}
     - target: {fileID: 6616594310562652481, guid: 883ddb79a64b8564d9214dc8890437cd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5297,8 +5302,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f65960451505f4ba12cab9c0284e3d, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1706654104
 GameObject:
   m_ObjectHideFlags: 0
@@ -5409,42 +5414,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1776372334}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -5454,7 +5459,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -5474,8 +5479,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1785580336
 GameObject:
   m_ObjectHideFlags: 0
@@ -5553,8 +5558,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -5628,8 +5633,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -5686,8 +5691,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 431b19e1617ef439a969d06b8d7a5ade, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   monstersParentObject: {fileID: 991748248}
   monsterGeneratePositions:
   - {fileID: 397163670}
@@ -5708,8 +5713,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b4a3541ba4a54258939edfd72d6ca2e, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   ability: {fileID: 1670037609}
   quitPannel: {fileID: 902436711}
   monsterGenenrateInterval: 3
@@ -5737,8 +5742,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 764d9a501eaa24100aa9a871be1d4abc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1907718931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5749,8 +5754,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65db1f8a6ffe8417e888259a75ee33b7, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1907718932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5761,8 +5766,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 064ad419b8b674a4d86d27a3623f045b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   scoreText: {fileID: 1092265166}
   hpImages:
   - {fileID: 539016701}
@@ -5833,8 +5838,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -5874,7 +5879,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1913328160
@@ -5887,8 +5892,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -5961,8 +5966,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
@@ -6072,42 +6077,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 1961048263}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -6117,7 +6122,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -6137,8 +6142,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1984499738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6249,42 +6254,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 2021927382}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -6294,7 +6299,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -6314,8 +6319,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2058782241
 GameObject:
   m_ObjectHideFlags: 0
@@ -6361,7 +6366,7 @@ PrefabInstance:
     - target: {fileID: 5432171662433614700, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
@@ -6371,36 +6376,36 @@ PrefabInstance:
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 2066432526}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 6212003249933230632, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 6212003249933230634, guid: d42c4fb35775b4820a2b61c5acaf077c,
@@ -6471,7 +6476,7 @@ PrefabInstance:
     - target: {fileID: 6212003250845644388, guid: d42c4fb35775b4820a2b61c5acaf077c,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42c4fb35775b4820a2b61c5acaf077c, type: 3}
@@ -6491,8 +6496,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2076841591
 GameObject:
   m_ObjectHideFlags: 0
@@ -6542,8 +6547,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -6583,7 +6588,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2076841594
@@ -6596,8 +6601,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -6670,8 +6675,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
@@ -6781,42 +6786,42 @@ PrefabInstance:
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraSprites.Array.data[4]
-      value:
+      value: 
       objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
         type: 3}
     - target: {fileID: 2601643709686430782, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: auraImage
-      value:
+      value: 
       objectReference: {fileID: 2111522814}
     - target: {fileID: 2601643709711032435, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3189992440206872558, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
@@ -6826,7 +6831,7 @@ PrefabInstance:
     - target: {fileID: 4389082341382374175, guid: ac32fa621e1e04a51a9450fbbfa1fc54,
         type: 3}
       propertyPath: m_Camera
-      value:
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac32fa621e1e04a51a9450fbbfa1fc54, type: 3}
@@ -6846,5 +6851,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
