@@ -103,7 +103,7 @@ public class Monster : MonoBehaviour
         speedTween = DOVirtual.DelayedCall(time, () => currentSpeed = speed);
     }
 
-    public void GetDamage(int key){
+    public virtual void GetDamage(int key){
         if(monsterHpKeys[0].Equals(key)){
             monsterHp--;
 
