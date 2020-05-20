@@ -20,6 +20,9 @@ public class ScoreManager : MonoBehaviour
     private Button abilityButton;
 
     [SerializeField]
+    private Text manaText;
+
+    [SerializeField]
     private Sprite idleAbilityButtonImage;
 
     [SerializeField]
@@ -62,6 +65,7 @@ public class ScoreManager : MonoBehaviour
     public void ManaChanged(int mana, int maxMana)
     {
         abilityGaugeImage.fillAmount = (float)mana / maxMana;
+        manaText.text = mana.ToString();
     }
 
     public void GetDamage(float damage)
