@@ -14,6 +14,9 @@ public class StageManager : MonoBehaviour
 
 
     [SerializeField]
+    private GameObject quitPannel;
+
+    [SerializeField]
     private float monsterGenenrateInterval;
 
     private void Awake()
@@ -42,6 +45,22 @@ public class StageManager : MonoBehaviour
         });
 
         StartCoroutine(MonsterGenerateCoroutine());
+    }
+
+    private void Update(){
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            quitPannel.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }   
+    
+    public void GameQuit(){
+        Application.Quit();
+    }
+
+    public void QuitCancel(){
+        quitPannel.SetActive(false);
+        Time.timeScale = 1;
     }
 
     private IEnumerator MonsterGenerateCoroutine()
