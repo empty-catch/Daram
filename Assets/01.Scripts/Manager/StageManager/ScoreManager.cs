@@ -66,8 +66,8 @@ public class ScoreManager : MonoBehaviour
         if (abilityGauge >= maxAbilityGauge)
         {
             abilityGauge = maxAbilityGauge;
-            abilityButton.interactable = true;
-            ChangeButtonImage();
+            // abilityButton.interactable = true;
+            // ChangeButtonImage();
         }
 
         abilityGaugeImage.fillAmount = (abilityGauge / maxAbilityGauge);
@@ -77,20 +77,20 @@ public class ScoreManager : MonoBehaviour
     {
         abilitySkil();
         AbilityGaugeInitialization();
-        abilityButton.image.sprite = idleAbilityButtonImage;
+        // abilityButton.image.sprite = idleAbilityButtonImage;
     }
 
     private void AbilityGaugeInitialization()
     {
         abilityGauge = 0;
         abilityGaugeImage.fillAmount = 0;
-        abilityButton.interactable = false;
+        // abilityButton.interactable = false;
     }
 
     private void ChangeButtonImage()
     {
         abilityIndex = UnityEngine.Random.Range(0, abilityButtonImages.Length);
-        abilityButton.image.sprite = abilityButtonImages[abilityIndex];
+        // abilityButton.image.sprite = abilityButtonImages[abilityIndex];
     }
 
     public void GetDamage(float damage)
