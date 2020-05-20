@@ -18,6 +18,10 @@ public class MonsterCreator : MonoBehaviour
 
     private void Awake(){
         monsterList = monstersParentObject.GetComponentsInChildren<Monster>(true).ToList();
+
+        monstersParentObject.GetComponentsInChildren<TypeMonster>(true).ToList().ForEach((monster)=>{
+            monsterList.Add(monster);
+        });
     }
 
     [ContextMenu("Monster Generate")]
@@ -34,7 +38,6 @@ public class MonsterCreator : MonoBehaviour
                     
             generatedMonster = GetAvailableMonster();
             generatedMonster.gameObject.transform.position = monsterGeneratePositions[monsterGeneratePositionIndex].position;
-
             generatedMonster?.Execute();
 
             yield return YieldInstructionCache.WaitingSecond(0.2f);
@@ -42,11 +45,17 @@ public class MonsterCreator : MonoBehaviour
     }
 
     private Monster GetAvailableMonster(){
-        for(int i = 0; i < monsterList.Count; i++){
-            if(monsterList[i].gameObject.activeInHierarchy.Equals(false)){
-                return monsterList[i];
+        int i = 0;
+        int randomIndex;
+
+        do{
+            randomIndex = Random.Range(0, monsterList.Count);
+            if(monsterList[randomIndex].gameObject.activeInHierarchy.Equals(false)){
+                return monsterList[randomIndex];
             }
-        }
+            i++;
+        }while(i < 5);
+
         return null;
     }
 }
