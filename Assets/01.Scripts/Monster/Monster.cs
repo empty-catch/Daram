@@ -50,6 +50,30 @@ public class Monster : MonoBehaviour
     public Aura Aura { get; private set; }
     public int AuraLevel { get; private set; }
 
+    public void SlowSpeedWhileEarth(AbilityInfo.Info info, int level){
+        bool effected = false;
+        IEnumerator Coroutine()
+        {
+            while (true){
+                if (Mathf.Abs(transform.position.x) <= info.hitCount && Mathf.Abs(transform.position.y) <= info.hitCount / 2F){
+                    SetSpeedFor(0.2F, info.duration);
+                    SetAuraFor(Aura.Earth, level, info.auraDuration);
+                    effected = true;
+                    yield break;
+                }
+                yield return null;
+            }
+        }
+
+        var coroutine = Coroutine();
+        StartCoroutine(coroutine);
+        DOVirtual.DelayedCall(info.duration, () => {
+            if (effected){
+                StopCoroutine(coroutine);
+                SetSpeedFor(1F, 0F);
+            }
+        });
+    }
 
     protected virtual void Awake(){
         keyImages = new Image[6][];
@@ -85,7 +109,6 @@ public class Monster : MonoBehaviour
 
 
     private void SetAuraImage(Aura aura){
-
         auraImage.gameObject.SetActive(true);
 
         switch(aura){
