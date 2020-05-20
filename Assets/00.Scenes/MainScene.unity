@@ -220,44 +220,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 106871866}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -318,21 +283,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebuffMonster (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
 --- !u!4 &106871865 stripped
@@ -341,18 +291,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 106871864}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &106871866 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 106871864}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &175206004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,44 +1739,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 683754718}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1899,21 +1802,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebuffMonster (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
 --- !u!4 &683754717 stripped
@@ -1922,18 +1810,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 683754716}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &683754718 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 683754716}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &726525588
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,44 +2024,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 773703287}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2246,21 +2087,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebuffMonster (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
 --- !u!4 &773703286 stripped
@@ -2269,18 +2095,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 773703285}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &773703287 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 773703285}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &774394854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2584,44 +2398,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 874662223}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2682,21 +2461,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebuffMonster (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
 --- !u!4 &874662222 stripped
@@ -2705,18 +2469,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 874662221}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &874662223 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 874662221}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &929158332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3231,44 +2983,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1035923364}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3327,22 +3044,7 @@ PrefabInstance:
     - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_Name
-      value: DebuffMonster
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: DebuffMonster (0)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
@@ -3352,18 +3054,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1035923362}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1035923364 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1035923362}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1092265164
 GameObject:
   m_ObjectHideFlags: 0
@@ -3571,44 +3261,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1139941579}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3669,21 +3324,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebuffMonster (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
 --- !u!4 &1139941578 stripped
@@ -3692,18 +3332,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1139941577}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1139941579 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1139941577}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1179406974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4648,44 +4276,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1342058485}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4746,21 +4339,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebuffMonster (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
 --- !u!4 &1342058484 stripped
@@ -4769,18 +4347,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1342058483}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1342058485 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1342058483}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1357328147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5084,44 +4650,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1393781366}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5182,21 +4713,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebuffMonster (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
 --- !u!4 &1393781365 stripped
@@ -5205,18 +4721,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1393781364}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1393781366 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1393781364}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1466999480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5633,44 +5137,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1615139081}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5731,21 +5200,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebuffMonster (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
 --- !u!4 &1615139080 stripped
@@ -5754,18 +5208,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1615139079}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1615139081 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1615139079}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1670037608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6143,44 +5585,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: toggleDebuff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1827853592}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 3345268964532703368, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 3345268964532703369, guid: 63344b2478452418cb35a15de49016cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6241,21 +5648,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebuffMonster (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 3345268964532703370, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3345268965048382558, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854134376666148653, guid: 63344b2478452418cb35a15de49016cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63344b2478452418cb35a15de49016cf, type: 3}
 --- !u!4 &1827853591 stripped
@@ -6264,18 +5656,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1827853590}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1827853592 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4173508725091085274, guid: 63344b2478452418cb35a15de49016cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1827853590}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1904050894
 GameObject:
   m_ObjectHideFlags: 0

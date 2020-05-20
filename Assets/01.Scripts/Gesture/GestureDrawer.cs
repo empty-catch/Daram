@@ -1,3 +1,4 @@
+using System.Collections;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,6 +30,23 @@ public class GestureDrawer : MonoBehaviour
     private Tween sealTween;
 
     private int sealedGesture = -1;
+    private int debuff;
+    private bool isDebuffed;
+    private IEnumerator debuffCoroutine;
+
+    public void ToggleDebuff(int index)
+    {
+        if (debuff == 0)
+        {
+            debuffCoroutine = Debuff();
+            StartCoroutine(debuffCoroutine);
+        }
+        else if ((debuff ^ (1 << index)) == 0)
+        {
+            StopCoroutine(debuffCoroutine);
+        }
+        debuff ^= 1 << index;
+    }
 
     public void SetSealedGesture(int gesture)
     {
@@ -40,6 +58,16 @@ public class GestureDrawer : MonoBehaviour
     public void ActivateAbility()
     {
         isAbilityActivated = true;
+    }
+
+    private IEnumerator Debuff()
+    {
+        isDebuffed = false;
+        while (true)
+        {
+            isDebuffed = !isDebuffed;
+            yield return YieldInstructionCache.WaitingSecond(4F);
+        }
     }
 
     private void Awake()
@@ -125,17 +153,17 @@ public class GestureDrawer : MonoBehaviour
         switch (value)
         {
             case "Vertical":
-                return 0;
+                return isDebuffed ? 1 : 0;
             case "Up":
-                return 1;
+                return isDebuffed ? 0 : 1;
             case "Horizontal":
-                return 2;
+                return isDebuffed ? 3 : 2;
             case "Down":
-                return 3;
+                return isDebuffed ? 2 : 3;
             case "DownArrow":
-                return 4;
+                return isDebuffed ? 5 : 4;
             case "UpArrow":
-                return 5;
+                return isDebuffed ? 4 : 5;
             case "Zigzag":
                 return 6;
             case "Wind":

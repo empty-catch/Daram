@@ -467,7 +467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3345268964532703369
 Transform:
   m_ObjectHideFlags: 0
@@ -475,7 +475,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3345268964532703370}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.328185, y: 0.6608422, z: 5.3908315}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -550,11 +550,30 @@ MonoBehaviour:
   defaultSpeed: 0.025
   damage: 1
   score: 10
-  auraImage: {fileID: 0}
-  auraSprites: []
+  auraImage: {fileID: 4173508725091085274}
+  auraSprites:
+  - {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d, type: 3}
+  - {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5, type: 3}
+  - {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75, type: 3}
+  - {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4, type: 3}
+  - {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020, type: 3}
   spriteResources:
   - {fileID: 1229660915644140122, guid: b86f81ac8029b4a5895f3ca63bb0635e, type: 3}
   - {fileID: -9107509194149917097, guid: 6c496e049587a4bd6985ae9f1ecf98b5, type: 3}
+  toggleDebuff:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: ToggleDebuff
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3345268964713020940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1710,7 +1729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8915898994351931421
 RectTransform:
   m_ObjectHideFlags: 0

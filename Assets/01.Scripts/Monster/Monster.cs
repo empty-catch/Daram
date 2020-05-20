@@ -51,7 +51,7 @@ public class Monster : MonoBehaviour
     public int AuraLevel { get; private set; }
 
 
-    private void Awake(){
+    protected virtual void Awake(){
         keyImages = new Image[6][];
 
         monsterHp = UnityEngine.Random.Range(1,5);
@@ -219,7 +219,7 @@ public class Monster : MonoBehaviour
         ResetObject();
     }
 
-    public void Death(){
+    public virtual void Death(){
         monsterDeathAction(score);
         ResetObject();
     }

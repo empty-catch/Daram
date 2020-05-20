@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Text.RegularExpressions;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,15 +9,25 @@ public class DebuffMonster : Monster
     public enum debuffType { drawReverse, directionReverse}
 
     private debuffType type;
+    private int index;
 
     [Header("Resources")]
     [SerializeField]
     private Sprite[] spriteResources;
 
+    [Header("Debuff")]
+    [SerializeField]
+    private IntEvent toggleDebuff;
+
+    protected override void Awake(){
+        base.Awake();
+        index = Convert.ToInt32(Regex.Replace(transform.name, @"\D", ""));
+    }
+
     public override void Execute(){
         base.Execute();
 
-        int randomValue = Random.Range(0, 2);
+        int randomValue = UnityEngine.Random.Range(0, 2);
 
         switch(randomValue){
             case 0:
@@ -29,13 +41,11 @@ public class DebuffMonster : Monster
             break;
         }
 
-        StartCoroutine(AbilityCoroutine());
+        toggleDebuff?.Invoke(index);
     }
 
-    private IEnumerator AbilityCoroutine(){
-        while(true){
-            // TOOD : 디버프 만들기
-            yield return YieldInstructionCache.WaitingSecond(0.25f);
-        }
+    public override void Death(){
+        base.Death();
+        toggleDebuff?.Invoke(index);
     }
 }
