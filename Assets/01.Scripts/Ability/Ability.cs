@@ -31,10 +31,10 @@ public class Ability : MonoBehaviour
     public void Execute(int index)
     {
         index -= 6;
-        int level = GetLevel(index);
+        int level = GetLevel(index) - 1;
         var info = infos[index][level];
 
-        if (canExecute && Mana >= info.manaCost)
+        if (canExecute && Mana >= info.manaCost && level >= 0)
         {
             Mana -= info.manaCost;
             canExecute = false;
