@@ -170,7 +170,7 @@ public class Monster : MonoBehaviour
         monsterGenerateAction(this);
 
         for(int i = 0; i < monsterHpKeys.Length; i++){
-            monsterHpKeys[i] = UnityEngine.Random.Range(0,8);
+            monsterHpKeys[i] = UnityEngine.Random.Range(0,6);
         }
 
         Func<int, int> getAvailableKeyImage = (value) => {
