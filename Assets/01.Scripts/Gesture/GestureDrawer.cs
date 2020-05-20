@@ -90,6 +90,11 @@ public class GestureDrawer : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 0F)
+        {
+            return;
+        }
+
 #if UNITY_EDITOR
         if (Input.GetMouseButton(0))
         {
@@ -120,8 +125,8 @@ public class GestureDrawer : MonoBehaviour
         {
             try
             {
-                if ((renderer.GetPosition(0) - renderer.GetPosition(positionCount - 1)).sqrMagnitude >= 0.5F
-                    || positionCount > 10)
+                if (positionCount > 10 || (positionCount > 1 &&
+                    (renderer.GetPosition(0) - renderer.GetPosition(positionCount - 1)).sqrMagnitude >= 0.5F))
                 {
                     var candidate = new Gesture(points.ToArray());
                     Result result;
