@@ -205,10 +205,10 @@ public class Monster : MonoBehaviour
 
     private IEnumerator ExecuteCoroutine(){
         while(true){
-            gameObject.transform.Translate(moveDirection * speed);
+            gameObject.transform.Translate(moveDirection * speed * Time.deltaTime);
             yield return YieldInstructionCache.WaitFrame;
             float distance = Vector2.Distance(gameObject.transform.position, Vector2.zero);
-            if(distance < 1.0f){
+            if(distance < 1.3f){
                 Attack();
             }
         }
