@@ -39,12 +39,14 @@ public class GestureDrawer : MonoBehaviour
     {
         if (debuff == 0)
         {
+            isDebuffed = false;
             debuffCoroutine = Debuff();
             StartCoroutine(debuffCoroutine);
         }
         else if ((debuff ^ (1 << index)) == 0)
         {
             StopCoroutine(debuffCoroutine);
+            isDebuffed = false;
         }
         debuff ^= 1 << index;
     }
@@ -64,7 +66,6 @@ public class GestureDrawer : MonoBehaviour
 
     private IEnumerator Debuff()
     {
-        isDebuffed = false;
         while (true)
         {
             isDebuffed = !isDebuffed;
@@ -163,13 +164,13 @@ public class GestureDrawer : MonoBehaviour
         switch (value)
         {
             case "Vertical":
-                return isDebuffed ? 1 : 0;
+                return isDebuffed ? 2 : 0;
             case "Up":
-                return isDebuffed ? 0 : 1;
+                return isDebuffed ? 3 : 1;
             case "Horizontal":
-                return isDebuffed ? 3 : 2;
+                return isDebuffed ? 0 : 2;
             case "Down":
-                return isDebuffed ? 2 : 3;
+                return isDebuffed ? 1 : 3;
             case "DownArrow":
                 return isDebuffed ? 5 : 4;
             case "UpArrow":
