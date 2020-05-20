@@ -6974,7 +6974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 431b19e1617ef439a969d06b8d7a5ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monstersParentObject: {fileID: 0}
+  monstersParentObject: {fileID: 991748248}
   monsterGeneratePositions:
   - {fileID: 397163670}
   - {fileID: 60807969}
