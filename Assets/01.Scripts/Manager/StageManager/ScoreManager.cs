@@ -27,9 +27,6 @@ public class ScoreManager : MonoBehaviour
 
     private int score;
 
-    private float maxAbilityGauge = 100;
-    private float abilityGauge;
-
     [SerializeField]
     private float defaultHp;
     private float hp;
@@ -60,37 +57,11 @@ public class ScoreManager : MonoBehaviour
     {
         this.score += score;
         scoreText.text = this.score.ToString();
-
-        abilityGauge += 10;
-
-        if (abilityGauge >= maxAbilityGauge)
-        {
-            abilityGauge = maxAbilityGauge;
-            // abilityButton.interactable = true;
-            // ChangeButtonImage();
-        }
-
-        abilityGaugeImage.fillAmount = (abilityGauge / maxAbilityGauge);
     }
 
-    public void AbilitySkil(int gestureIndex)
+    public void ManaChanged(int mana, int maxMana)
     {
-        abilitySkil();
-        AbilityGaugeInitialization();
-        // abilityButton.image.sprite = idleAbilityButtonImage;
-    }
-
-    private void AbilityGaugeInitialization()
-    {
-        abilityGauge = 0;
-        abilityGaugeImage.fillAmount = 0;
-        // abilityButton.interactable = false;
-    }
-
-    private void ChangeButtonImage()
-    {
-        abilityIndex = UnityEngine.Random.Range(0, abilityButtonImages.Length);
-        // abilityButton.image.sprite = abilityButtonImages[abilityIndex];
+        abilityGaugeImage.fillAmount = (float)mana / maxMana;
     }
 
     public void GetDamage(float damage)
@@ -112,7 +83,5 @@ public class ScoreManager : MonoBehaviour
         {
             hpImages[i].sprite = defaultHpSprite;
         }
-
     }
-
 }

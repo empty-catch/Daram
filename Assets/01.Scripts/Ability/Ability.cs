@@ -18,10 +18,15 @@ public class Ability : MonoBehaviour
     private GameObject burnEffect;
     [SerializeField]
     private GameObject fog;
+    [SerializeField]
+    private IntIntEvent manaChanged;
+
     private IAbility[] abilities = new IAbility[5];
     private bool canExecute = true;
+    private int mana;
+    private int maxMana = 200;
 
-    public int Mana { get; set; }
+    public int Mana { get => mana; set { mana = Mathf.Clamp(value, 0, maxMana); manaChanged?.Invoke(mana, maxMana); } }
 
     public void Execute(int index)
     {

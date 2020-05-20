@@ -8702,6 +8702,11 @@ PrefabInstance:
       propertyPath: monsterDamageController
       value: 
       objectReference: {fileID: 1907718930}
+    - target: {fileID: 3431702389895063597, guid: 883ddb79a64b8564d9214dc8890437cd,
+        type: 3}
+      propertyPath: manaChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1907718932}
     - target: {fileID: 6616594310562652481, guid: 883ddb79a64b8564d9214dc8890437cd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9559,7 +9564,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0

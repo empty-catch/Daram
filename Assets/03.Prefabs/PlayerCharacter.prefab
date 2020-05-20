@@ -66,6 +66,20 @@ MonoBehaviour:
   burnEffect: {fileID: 702061907037858554, guid: cfcb4691c3f9ec44787576e81129854a,
     type: 3}
   fog: {fileID: 2313514339764989932, guid: 1a164d6aeaf6ab2469fa014607de3b71, type: 3}
+  manaChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: ManaChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8831746405217942464
 MonoBehaviour:
   m_ObjectHideFlags: 0
