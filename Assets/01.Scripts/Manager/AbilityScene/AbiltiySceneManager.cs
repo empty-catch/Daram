@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class AbiltiySceneManager : MonoBehaviour
 {
     [Header("Objects")]
@@ -93,5 +94,9 @@ public class AbiltiySceneManager : MonoBehaviour
         SetSkilPointText(index, skilPoint[index]);
         PointSave();
         CalculateRemainingSkilPoint();
+    }
+
+    public void StartGame(){
+        SceneManager.LoadScene("MainScene");
     }
 }
