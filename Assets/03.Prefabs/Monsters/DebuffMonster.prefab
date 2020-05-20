@@ -547,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddcfe01ca2ca43768386a94d2e6fce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSpeed: 1
+  defaultSpeed: 0.5
   damage: 1
   score: 10
   auraImage: {fileID: 4173508725091085274}
