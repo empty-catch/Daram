@@ -13,6 +13,10 @@ public class MonsterCreator : MonoBehaviour
     private List<Monster> monsterList = new List<Monster>();
     private List<int> beforeGeneratePositionIndex = new List<int>();
 
+    private System.Func<int> getActiveMonsterCount;
+
+    private int monsterLimitCount;
+
     [SerializeField]
     private Transform[] monsterGeneratePositions;
     public List<Monster> MonsterList => monsterList;
@@ -21,15 +25,21 @@ public class MonsterCreator : MonoBehaviour
         monsterList = monstersParentObject.GetComponentsInChildren<Monster>(true).ToList();
     }
 
+    public void SetFunction(System.Func<int> getActiveMonsterCount){
+        this.getActiveMonsterCount = getActiveMonsterCount;
+    }
+
     [ContextMenu("Monster Generate")]
     public void Execute(){
-        StartCoroutine(ExecuteCoroutine());
+        if(getActiveMonsterCount() < 4){
+            StartCoroutine(ExecuteCoroutine());
+        }        
     }
 
     private IEnumerator ExecuteCoroutine(){
-        int randomRepeatIndex = Random.Range(0, 5);
+        int i = 0;
         
-        for(int i = 0; i < randomRepeatIndex; i++){
+        do{
             Monster generatedMonster;
             int monsterGeneratePositionIndex = Random.Range(0, monsterGeneratePositions.Length);
                 
@@ -43,7 +53,7 @@ public class MonsterCreator : MonoBehaviour
             beforeGeneratePositionIndex.Add(monsterGeneratePositionIndex);
 
             yield return YieldInstructionCache.WaitingSecond(0.1f);
-        }
+        }while(i < 4 && getActiveMonsterCount() < 4);
 
         beforeGeneratePositionIndex.Clear();
     }
@@ -62,4 +72,5 @@ public class MonsterCreator : MonoBehaviour
 
         return null;
     }
+
 }

@@ -33,6 +33,10 @@ public class StageManager : MonoBehaviour
         playerGestureController.SettingGestureAction(monsterDamageController.AttackMonsters);
 
         scoreManager.SettingAbilitySkil(monsterDamageController.MonsterAllDeath);
+        
+        monsterCreator.SetFunction(
+            () => monsterDamageController.ActiveMonsters.Count 
+        );
 
         monsterCreator.MonsterList.ForEach((monster) =>
         {
