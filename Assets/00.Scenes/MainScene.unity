@@ -464,66 +464,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 518686896}
     m_Modifications:
-    - target: {fileID: 78419291081390316, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 474358385518325795, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_Name
       value: ImprintMonster (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 201617143}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -579,11 +529,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881977707226, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa841d1afe6314d13bb645577fe66c73, type: 3}
 --- !u!4 &201617142 stripped
@@ -592,18 +537,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 201617141}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &201617143 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8258861138949807674, guid: fa841d1afe6314d13bb645577fe66c73,
-    type: 3}
-  m_PrefabInstance: {fileID: 201617141}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &397163669
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,66 +732,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 518686896}
     m_Modifications:
-    - target: {fileID: 78419291081390316, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 474358385518325795, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_Name
       value: ImprintMonster (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 516038200}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -914,11 +797,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881977707226, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa841d1afe6314d13bb645577fe66c73, type: 3}
 --- !u!4 &516038199 stripped
@@ -927,18 +805,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 516038198}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &516038200 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8258861138949807674, guid: fa841d1afe6314d13bb645577fe66c73,
-    type: 3}
-  m_PrefabInstance: {fileID: 516038198}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &518686895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,66 +1010,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 518686896}
     m_Modifications:
-    - target: {fileID: 78419291081390316, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 474358385518325795, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_Name
       value: ImprintMonster (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 561143222}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1259,11 +1075,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881977707226, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa841d1afe6314d13bb645577fe66c73, type: 3}
 --- !u!4 &561143221 stripped
@@ -1272,18 +1083,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 561143220}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &561143222 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8258861138949807674, guid: fa841d1afe6314d13bb645577fe66c73,
-    type: 3}
-  m_PrefabInstance: {fileID: 561143220}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &577161529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,66 +1128,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 518686896}
     m_Modifications:
-    - target: {fileID: 78419291081390316, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 474358385518325795, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_Name
       value: ImprintMonster (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 596421093}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1444,11 +1193,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881977707226, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa841d1afe6314d13bb645577fe66c73, type: 3}
 --- !u!4 &596421092 stripped
@@ -1457,18 +1201,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 596421091}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &596421093 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8258861138949807674, guid: fa841d1afe6314d13bb645577fe66c73,
-    type: 3}
-  m_PrefabInstance: {fileID: 596421091}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &609825587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,66 +2724,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 518686896}
     m_Modifications:
-    - target: {fileID: 78419291081390316, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 474358385518325795, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_Name
       value: ImprintMonster (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 929158334}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3107,11 +2789,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881977707226, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa841d1afe6314d13bb645577fe66c73, type: 3}
 --- !u!4 &929158333 stripped
@@ -3120,18 +2797,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 929158332}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &929158334 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8258861138949807674, guid: fa841d1afe6314d13bb645577fe66c73,
-    type: 3}
-  m_PrefabInstance: {fileID: 929158332}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &935267173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3824,66 +3489,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 518686896}
     m_Modifications:
-    - target: {fileID: 78419291081390316, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 474358385518325795, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_Name
       value: ImprintMonster (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1094551270}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3939,11 +3554,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881977707226, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa841d1afe6314d13bb645577fe66c73, type: 3}
 --- !u!4 &1094551269 stripped
@@ -3952,18 +3562,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1094551268}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1094551270 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8258861138949807674, guid: fa841d1afe6314d13bb645577fe66c73,
-    type: 3}
-  m_PrefabInstance: {fileID: 1094551268}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1139941577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4300,66 +3898,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 518686896}
     m_Modifications:
-    - target: {fileID: 78419291081390316, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 474358385518325795, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_Name
       value: ImprintMonster (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1210601796}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4415,11 +3963,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881977707226, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa841d1afe6314d13bb645577fe66c73, type: 3}
 --- !u!4 &1210601795 stripped
@@ -4428,18 +3971,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1210601794}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1210601796 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8258861138949807674, guid: fa841d1afe6314d13bb645577fe66c73,
-    type: 3}
-  m_PrefabInstance: {fileID: 1210601794}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1234669243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4888,66 +4419,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 518686896}
     m_Modifications:
-    - target: {fileID: 78419291081390316, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 474358385518325795, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_Name
       value: ImprintMonster (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1322776063}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5003,11 +4484,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881977707226, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa841d1afe6314d13bb645577fe66c73, type: 3}
 --- !u!4 &1322776062 stripped
@@ -5016,18 +4492,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1322776061}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1322776063 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8258861138949807674, guid: fa841d1afe6314d13bb645577fe66c73,
-    type: 3}
-  m_PrefabInstance: {fileID: 1322776061}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1335660641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7522,66 +6986,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 518686896}
     m_Modifications:
-    - target: {fileID: 78419291081390316, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 474358385518325795, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_Name
       value: ImprintMonster (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694276, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
-      propertyPath: auraSprites.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraImage
+      propertyPath: seal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2084468490}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a4528cf65ada04bdabe164bbcee3461d,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 76a0bb08fd61c44018f41b68b87d88c5,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: f22a3cd10968a41f7bea3cdac9f0bf75,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: dea678c29dd2e455ca3ebc5af7a21ab4,
-        type: 3}
-    - target: {fileID: 2721681881162694282, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: auraSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: e344b758ac18b4d998ccc9a1c701a020,
-        type: 3}
+      objectReference: {fileID: 1466999481}
     - target: {fileID: 2721681881162694283, guid: fa841d1afe6314d13bb645577fe66c73,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7637,11 +7051,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2721681881977707226, guid: fa841d1afe6314d13bb645577fe66c73,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa841d1afe6314d13bb645577fe66c73, type: 3}
 --- !u!4 &2084468489 stripped
@@ -7650,18 +7059,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2084468488}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2084468490 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8258861138949807674, guid: fa841d1afe6314d13bb645577fe66c73,
-    type: 3}
-  m_PrefabInstance: {fileID: 2084468488}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2111522812
 PrefabInstance:
   m_ObjectHideFlags: 0

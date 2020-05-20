@@ -14,7 +14,7 @@ public class DebuffMonster : Monster
 
     public override void Execute(){
         base.Execute();
-        
+
         int randomValue = Random.Range(0, 2);
 
         switch(randomValue){
@@ -37,5 +37,5 @@ public class DebuffMonster : Monster
             // TOOD : 디버프 만들기
             yield return YieldInstructionCache.WaitingSecond(0.25f);
         }
-    }  
+    }
 }

@@ -95,7 +95,7 @@ public class ScoreManager : MonoBehaviour
 
     public void GetDamage(float damage)
     {
-        hp -= damage;
+        // hp -= damage;
 
         if (hp <= 0)
         {
