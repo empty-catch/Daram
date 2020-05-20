@@ -2,6 +2,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using PDollarGestureRecognizer;
 using DG.Tweening;
 
@@ -55,9 +56,10 @@ public class GestureDrawer : MonoBehaviour
         sealTween = DOVirtual.DelayedCall(sealDuration, () => sealedGesture = -1);
     }
 
-    public void ActivateAbility()
+    public void ActivateAbility(Image image)
     {
-        isAbilityActivated = true;
+        isAbilityActivated = !isAbilityActivated;
+        image.color = isAbilityActivated ? Color.blue : Color.red;
     }
 
     private IEnumerator Debuff()
@@ -124,7 +126,6 @@ public class GestureDrawer : MonoBehaviour
                 {
                     result = PointCloudRecognizer.Classify(candidate, abilityGestures);
                     abilityDrawed?.Invoke(GetGestureIndex(result.GestureClass));
-                    isAbilityActivated = false;
                 }
                 else
                 {
