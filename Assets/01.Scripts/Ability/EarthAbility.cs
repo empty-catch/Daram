@@ -11,8 +11,20 @@ public class EarthAbility : IAbility
         this.effect = effect;
     }
 
+    public bool IsCooldown { get; private set; }
+
     public void Execute(List<Monster> activeMonsters, AbilityInfo.Info info, int level)
     {
+        if (IsCooldown)
+        {
+            return;
+        }
+        else
+        {
+            IsCooldown = true;
+            DOVirtual.DelayedCall(info.cooldown, () => IsCooldown = false);
+        }
+
         var gObj = Object.Instantiate(effect, new Vector3(0F, -0.8F), Quaternion.identity);
         gObj.transform.localScale = new Vector3(info.hitCount * 1.5F, info.hitCount * 1.5F);
         Object.Destroy(gObj, info.duration);

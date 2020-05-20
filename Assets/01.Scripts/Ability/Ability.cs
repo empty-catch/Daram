@@ -22,7 +22,6 @@ public class Ability : MonoBehaviour
     private IntIntEvent manaChanged;
 
     private IAbility[] abilities = new IAbility[5];
-    private bool canExecute = true;
     private int mana;
     private int maxMana = 200;
 
@@ -32,14 +31,17 @@ public class Ability : MonoBehaviour
     {
         index -= 6;
         int level = GetLevel(index) - 1;
-        var info = infos[index][level];
 
-        if (canExecute && Mana >= info.manaCost && level >= 0)
+        if (level >= 0)
         {
-            Mana -= info.manaCost;
-            canExecute = false;
-            DOVirtual.DelayedCall(info.cooldown, () => canExecute = true);
-            abilities[index].Execute(monsterDamageController.ActiveMonsters, info, level);
+            var info = infos[index][level];
+            var ability = abilities[index];
+
+            if (!ability.IsCooldown && Mana >= info.manaCost)
+            {
+                Mana -= info.manaCost;
+                abilities[index].Execute(monsterDamageController.ActiveMonsters, info, level);
+            }
         }
     }
 

@@ -7,6 +7,8 @@ public class IceAbility : IAbility
     private GameObject effect;
     private GameObject windEffect;
 
+    public bool IsCooldown { get; private set; }
+
     public IceAbility(GameObject effect, GameObject windEffect)
     {
         this.effect = effect;
@@ -15,6 +17,16 @@ public class IceAbility : IAbility
 
     public void Execute(List<Monster> activeMonsters, AbilityInfo.Info info, int level)
     {
+        if (IsCooldown)
+        {
+            return;
+        }
+        else
+        {
+            IsCooldown = true;
+            DOVirtual.DelayedCall(info.cooldown, () => IsCooldown = false);
+        }
+
         for (int i = 0; i < info.hitCount && i < activeMonsters.Count; i++)
         {
             var monster = activeMonsters[i];

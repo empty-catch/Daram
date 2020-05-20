@@ -12,6 +12,8 @@ public class FlameAbility : IAbility
     private System.Action<float> burn;
     private System.Action<Monster, AbilityInfo.Info> iceSkill;
 
+    public bool IsCooldown { get; private set; }
+
     public FlameAbility(GameObject effect, GameObject burnEffect, GameObject windEffect, GameObject fog, System.Action<float> burn, System.Action<Monster, AbilityInfo.Info> iceSkill)
     {
         this.effect = effect;
@@ -24,6 +26,16 @@ public class FlameAbility : IAbility
 
     public void Execute(List<Monster> activeMonsters, AbilityInfo.Info info, int level)
     {
+        if (IsCooldown)
+        {
+            return;
+        }
+        else
+        {
+            IsCooldown = true;
+            DOVirtual.DelayedCall(info.cooldown, () => IsCooldown = false);
+        }
+
         for (int i = 0; i < info.hitCount && i < activeMonsters.Count; i++)
         {
             var monster = activeMonsters[i];

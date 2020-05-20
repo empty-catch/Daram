@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using UnityEngine;
 
 public interface IAbility
 {
+    bool IsCooldown { get; }
     void Execute(List<Monster> activeMonsters, AbilityInfo.Info info, int level);
 }

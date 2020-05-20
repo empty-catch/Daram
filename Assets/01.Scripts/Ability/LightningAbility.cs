@@ -8,6 +8,8 @@ public class LightningAbility : IAbility
     private GameObject windEffect;
     private System.Action<Monster, AbilityInfo.Info> iceSkill;
 
+    public bool IsCooldown { get; private set; }
+
     public LightningAbility(GameObject effect, GameObject windEffect, System.Action<Monster, AbilityInfo.Info> iceSkill)
     {
         this.effect = effect;
@@ -17,6 +19,16 @@ public class LightningAbility : IAbility
 
     public void Execute(List<Monster> activeMonsters, AbilityInfo.Info info, int level)
     {
+        if (IsCooldown)
+        {
+            return;
+        }
+        else
+        {
+            IsCooldown = true;
+            DOVirtual.DelayedCall(info.cooldown, () => IsCooldown = false);
+        }
+
         for (int i = 0; i < info.hitCount && i < activeMonsters.Count; i++)
         {
             var monster = activeMonsters[i];
