@@ -11,6 +11,7 @@ public class MonsterCreator : MonoBehaviour
     private GameObject monstersParentObject;
 
     private List<Monster> monsterList = new List<Monster>();
+    private List<int> beforeGeneratePositionIndex = new List<int>();
 
     [SerializeField]
     private Transform[] monsterGeneratePositions;
@@ -31,13 +32,20 @@ public class MonsterCreator : MonoBehaviour
         for(int i = 0; i < randomRepeatIndex; i++){
             Monster generatedMonster;
             int monsterGeneratePositionIndex = Random.Range(0, monsterGeneratePositions.Length);
-                    
+                
+            if(beforeGeneratePositionIndex.Contains(monsterGeneratePositionIndex))  
+                continue;
+
             generatedMonster = GetAvailableMonster();
             generatedMonster.gameObject.transform.position = monsterGeneratePositions[monsterGeneratePositionIndex].position;
             generatedMonster?.Execute();
 
-            yield return YieldInstructionCache.WaitingSecond(0.2f);
+            beforeGeneratePositionIndex.Add(monsterGeneratePositionIndex);
+
+            yield return YieldInstructionCache.WaitingSecond(0.1f);
         }
+
+        beforeGeneratePositionIndex.Clear();
     }
 
     private Monster GetAvailableMonster(){
