@@ -79,7 +79,7 @@ public class Monster : MonoBehaviour
     }
 
 
-    public void SetAuraFor(Aura aura, int level, float time){
+    public virtual void SetAuraFor(Aura aura, int level, float time){
         Aura = aura;
         AuraLevel = level;
         auraTime = time;
@@ -87,7 +87,7 @@ public class Monster : MonoBehaviour
         auraTween = DOVirtual.DelayedCall(time, () => Aura = Aura.None);
     }
 
-    public void SetHigherAuraFor(Aura aura, int level, float time){
+    public virtual void SetHigherAuraFor(Aura aura, int level, float time){
         if (AuraLevel > level){
             SetAuraFor(Aura, AuraLevel, auraTime);
         }
