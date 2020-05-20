@@ -51,6 +51,11 @@ public class TypeMonster : Monster
         }
     }
 
+    public override void Execute(){
+        base.Execute();
+        SetCounterType();
+    }
+
     public override void SetAuraFor(Aura aura, int level, float time){
         base.SetAuraFor(aura, level, time);
         if(counterType.Equals(aura)){
