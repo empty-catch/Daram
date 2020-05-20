@@ -15,7 +15,7 @@ public class IceAbility : IAbility
 
     public void Execute(List<Monster> activeMonsters, AbilityInfo.Info info, int level)
     {
-        for (int i = 0; i < info.hitCount; i++)
+        for (int i = 0; i < info.hitCount && i < activeMonsters.Count; i++)
         {
             var monster = activeMonsters[i];
             switch (monster.Aura)
