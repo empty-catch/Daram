@@ -10,17 +10,9 @@ public class TypeMonster : Monster
     [SerializeField]
     private Aura counterType;
     
-    private SpriteRenderer spriteRenderer;
-
     [Header("Resources")]
     [SerializeField]
     private Sprite[] spriteResources;
-
-    private void Awake(){
-        base.BaseAwake();
-        
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-    }
 
     private void SetCounterType(){
         var type = Enum.GetValues(typeof(Aura));

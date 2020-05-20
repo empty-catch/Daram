@@ -7,16 +7,10 @@ public class DebuffMonster : Monster
     public enum debuffType { drawReverse, directionReverse}
 
     private debuffType type;
-    private SpriteRenderer spriteRenderer;
 
     [Header("Resources")]
     [SerializeField]
     private Sprite[] spriteResources;
-
-    private void Awake(){
-        base.BaseAwake();
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-    }
 
     public override void Execute(){
         base.Execute();

@@ -15,8 +15,6 @@ public class Monster : MonoBehaviour
     private Action<int> monsterDeathAction;
     private Action<float> monsterAttackAction;
 
-    private SpriteRenderer spriteRenderer;
-
     [Header("Values")]
     private int monsterHp;
     
@@ -35,6 +33,7 @@ public class Monster : MonoBehaviour
 
     private Image[][] keyImages;
 
+    protected SpriteRenderer spriteRenderer;
 
     private Tween auraTween;
     private Tween speedTween;
@@ -67,8 +66,6 @@ public class Monster : MonoBehaviour
             keyImages[i] = tempArray;
         }
     }
-
-    protected void BaseAwake() => Awake();
 
     // StageManager의 Start 함수에서 설정 해 줌
     public void SettingActions(Action<Monster> monsterGenerateAction, Action<Monster> monsterResetAction, Action<float> monsterAttackAction, Action<int> monsterDeathAction, Action monsterDamageAction){
