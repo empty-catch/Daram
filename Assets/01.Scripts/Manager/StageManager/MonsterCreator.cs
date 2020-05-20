@@ -18,10 +18,6 @@ public class MonsterCreator : MonoBehaviour
 
     private void Awake(){
         monsterList = monstersParentObject.GetComponentsInChildren<Monster>(true).ToList();
-
-        monstersParentObject.GetComponentsInChildren<TypeMonster>(true).ToList().ForEach((monster)=>{
-            monsterList.Add(monster);
-        });
     }
 
     [ContextMenu("Monster Generate")]
