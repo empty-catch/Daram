@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using PDollarGestureRecognizer;
+using DG.Tweening;
 
 public class GestureDrawer : MonoBehaviour
 {
+    [SerializeField]
+    private float sealDuration;
     [SerializeField]
     private new LineRenderer renderer;
     [SerializeField]
@@ -23,8 +26,16 @@ public class GestureDrawer : MonoBehaviour
     private int strokeID = -1;
     private int positionCount;
     private bool isAbilityActivated;
+    private Tween sealTween;
 
-    public int SealedGesture { get; set; } = -1;
+    private int sealedGesture = -1;
+
+    public void SetSealedGesture(int gesture)
+    {
+        sealedGesture = gesture;
+        sealTween?.Kill();
+        sealTween = DOVirtual.DelayedCall(sealDuration, () => sealedGesture = -1);
+    }
 
     public void ActivateAbility()
     {
@@ -91,7 +102,7 @@ public class GestureDrawer : MonoBehaviour
                 {
                     result = PointCloudRecognizer.Classify(candidate, normalGestures);
                     var gestureIndex = GetGestureIndex(result.GestureClass);
-                    if (gestureIndex != SealedGesture)
+                    if (gestureIndex != sealedGesture)
                     {
                         normalDrawed?.Invoke(gestureIndex);
                     }

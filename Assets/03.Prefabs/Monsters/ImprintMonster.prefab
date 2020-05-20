@@ -811,12 +811,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7525e156d7b444535b2027c7afb228ae, type: 3}
   - {fileID: 21300000, guid: 0c0a3e45fa87841b0ae4d8e106cfadbc, type: 3}
   - {fileID: 21300000, guid: da0561b6c849a44f6b9c677a15fde7ad, type: 3}
-  duration: 1
   seal:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: set_SealedGesture
+        m_MethodName: SetSealedGesture
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using DG.Tweening;
 
 public class ImprintMonster : Monster
 {
@@ -15,8 +14,6 @@ public class ImprintMonster : Monster
     private Sprite[] spriteResources;
 
     [Header("Seal")]
-    [SerializeField]
-    private float duration;
     [SerializeField]
     private IntEvent seal;
 
@@ -34,6 +31,5 @@ public class ImprintMonster : Monster
     public override void GetDamage(int key){
         base.GetDamage(key);
         seal?.Invoke((int)sealGesture);
-        DOVirtual.DelayedCall(duration, () => seal?.Invoke(-1));
     }
 }

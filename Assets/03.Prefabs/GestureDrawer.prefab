@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e168eb856e765b4fb9d8058c9b32767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sealDuration: 1
   renderer: {fileID: 4763031882259839054}
   normalXmls:
   - {fileID: 4900000, guid: e19d00785c86ee246b764ebd585cacfc, type: 3}
